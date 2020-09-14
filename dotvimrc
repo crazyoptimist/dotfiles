@@ -1,0 +1,54 @@
+" .vimrc by CrazyOptimist
+" DO NOT PUT ANY LINE YOU DO NOT KNOW WHAT IT IS
+
+""""""""""""""""""""""""
+" VIM OPTIONS BEGIN
+""""""""""""""""""""""""
+syntax enable                                             " Enables syntax highlight
+set number                                                " Shows line numbers
+set ruler                                                 " Shows the rulers
+set autoindent                                            " Automatically guesses the indentation given the previous one
+set showcmd                                               " Shows current cursor info
+set shiftwidth=2                                          " Uses 2 space tabs by default
+set softtabstop=2
+set hlsearch                                              " Automatically highlights search results, to hide them run :noh
+set incsearch                                             " Searches incremetally as you type.
+set ignorecase                                            " Ignores cases when searching
+set noswapfile                                            " Disables swap files
+
+""""""""""""""""""""""""
+" PLUGINS
+""""""""""""""""""""""""
+" Begin Vundle setup - a plugin manager
+" git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+" :PluginInstall
+set nocompatible              " we are not gonna use vi, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+" list your plugins here
+Plugin 'scrooloose/nerdtree'
+Plugin 'tomasr/molokai'
+Plugin 'jiangmiao/auto-pairs'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'vim-ruby/vim-ruby'
+
+
+call vundle#end()            " required
+filetype plugin indent on    " required
+" End Vundle setup
+
+""""""""""""""""""""""""
+" CUSTOM CONFIG
+""""""""""""""""""""""""
+" Configs to make Molokai look great
+set background=dark
+let g:molokai_original=1
+let g:rehash256=1
+set t_Co=256
+colorscheme molokai
