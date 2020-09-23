@@ -41,7 +41,6 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-ruby/vim-ruby'
-Plugin 'gabrielelana/vim-markdown'
 
 
 call vundle#end()            " required
