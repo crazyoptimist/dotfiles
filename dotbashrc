@@ -20,6 +20,10 @@
 ##	  A small helper function to generate color formating codes from simple
 ##	  number codes (defined below as local variables for convenience).
 ##
+##      * parse_git_branch()
+##        This function extracts git branch name of the current directory if it's a 
+##        git repository.
+##
 ##	* bash_prompt()
 ##	  This function colorizes the bash promt. The exact color scheme can be
 ##	  configured here. The structure of the function is as follows:
@@ -100,6 +104,13 @@ format_font()
 	esac
 }
 
+
+##
+##      EXTRACT GIT BRANCH NAME IF ANY
+##
+parse_git_branch() {
+   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
 
 
 ##
@@ -279,7 +290,7 @@ bash_prompt() {
 	## BASH PROMT                                                             ##
 	## Generate promt and remove format from the rest                         ##
 	############################################################################
-	PS1="$TITLEBAR\n${PROMT_USER}${SEPARATOR_1}${PROMT_HOST}${SEPARATOR_2}${PROMT_PWD}${SEPARATOR_3}${PROMT_INPUT}"
+	PS1="$TITLEBAR\n${PROMT_USER}${SEPARATOR_1}${PROMT_HOST}${SEPARATOR_2}${PROMT_PWD}\$(parse_git_branch)${SEPARATOR_3}${PROMT_INPUT}"
 
 
 
