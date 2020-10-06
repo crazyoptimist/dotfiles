@@ -36,8 +36,9 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 " list your plugins here
 Plugin 'scrooloose/nerdtree'
-Plugin 'joshdick/onedark.vim'
+Plugin 'tomasr/molokai'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'tpope/vim-commentary'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-ruby/vim-ruby'
@@ -55,4 +56,4 @@ set background=dark
 let g:molokai_original=1
 let g:rehash256=1
 set t_Co=256
-colorscheme onedark
+colorscheme molokai
