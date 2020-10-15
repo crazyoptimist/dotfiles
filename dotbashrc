@@ -1,3 +1,14 @@
+##      GIT SHORTCUTS
+alias gc="git commit -m $1"
+alias gca="git commit -a"
+alias gs="git status"
+alias gaa="git add ."
+alias glog="git log"
+alias gp="git pull"
+
+##      SOME HOUSEKEEPINGS
+alias ..="cd .."
+
 ################################################################################
 ##
 ##	FANCY BASH PROMPT
