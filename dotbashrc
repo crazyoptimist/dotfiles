@@ -1,4 +1,57 @@
-##      GIT SHORTCUTS
+# uncomment the below line if necessary
+# export EDITOR=vim
+
+# if not running interactively, don't do anything
+case $- in
+    *i*) ;;
+      *) return;;
+esac
+
+# don't put duplicate lines or lines starting with space in the history.
+HISTCONTROL=ignoreboth
+
+# append to the history file, don't overwrite it
+shopt -s histappend
+
+# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
+HISTSIZE=1000
+HISTFILESIZE=2000
+
+# check the window size after each command and, if necessary,
+# update the values of LINES and COLUMNS.
+shopt -s checkwinsize
+
+# make less more friendly for non-text input files, see lesspipe(1)
+[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
+
+# enable color support of ls and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
+
+# some more ls aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+alias ..="cd .."
+
+# enable programmable completion features (you don't need to enable
+# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
+# sources /etc/bash.bashrc).
+if ! shopt -oq posix; then
+  if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
+  elif [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+  fi
+fi
+
+
+## aliases for git
 alias gc="git commit -m $1"
 alias gca="git commit -a"
 alias gs="git status"
@@ -6,63 +59,9 @@ alias gaa="git add ."
 alias glog="git log"
 alias gp="git pull"
 
-##      SOME HOUSEKEEPINGS
-alias ..="cd .."
-
 ################################################################################
-##
-##	FANCY BASH PROMPT
-##
-##	This script updates your "PS1" environment variable to display colors.
-##	Addicitionally, it also shortens the name of your current part to maximum
-##	25 characters, which is quite useful when working in deeply nested folders.
-##
-##      Copy the content of this file into your .bashrc file
-##      Need to install "powerline fonts" library, which is called differently 
-##      for different distros
-##
-##	FUNCTIONS:
-##
-##	* bash_prompt_command()
-##	  This function takes your current working directory and stores a shortened
-##	  version in the variable "NEW_PWD".
-##
-##	* format_font()
-##	  A small helper function to generate color formating codes from simple
-##	  number codes (defined below as local variables for convenience).
-##
-##      * parse_git_branch()
-##        This function extracts git branch name of the current directory if it's a 
-##        git repository.
-##
-##	* bash_prompt()
-##	  This function colorizes the bash promt. The exact color scheme can be
-##	  configured here. The structure of the function is as follows:
-##		1. A. Definition of available colors for 16 bits.
-##		1. B. Definition of some colors for 256 bits (add your own).
-##		2. Configuration >> EDIT YOUR PROMT HERE<<.
-##		4. Generation of color codes.
-##		5. Generation of window title (some terminal expect the first
-##		   part of $PS1 to be the window title)
-##		6. Formating of the bash promt ($PS1).
-##
-##	* Main script body:
-##	  It calls the adequate helper functions to colorize your promt and sets
-##	  a hook to regenerate your working directory "NEW_PWD" when you change it.
-##
-
-
+####################           FANCY BASH PROMPT          ######################
 ################################################################################
-##  FUNCTIONS                                                                 ##
-################################################################################
-
-##
-##	ARRANGE $PWD AND STORE IT IN $NEW_PWD
-##	* The home directory (HOME) is replaced with a ~
-##	* The last pwdmaxlen characters of the PWD are displayed
-##	* Leading partial directory names are striped off
-##		/home/me/stuff -> ~/stuff (if USER=me)
-##		/usr/share/big_dir_name -> ../share/big_dir_name (if pwdmaxlen=20)
 
 bash_prompt_command() {
 	# How many characters of the $PWD should be kept
@@ -197,10 +196,10 @@ bash_prompt() {
 	############################################################################
 
 
-        FONT_COLOR_1=$WHITE; BACKGROUND_1=$BLUE; TEXTEFFECT_1=$BOLD
-        FONT_COLOR_2=$WHITE; BACKGROUND_2=$D_GRAY; TEXTEFFECT_2=$BOLD
-        FONT_COLOR_3=$D_GRAY; BACKGROUND_3=$GREEN; TEXTEFFECT_3=$BOLD
-        PROMT_FORMAT=$CYAN_BOLD
+  FONT_COLOR_1=$WHITE; BACKGROUND_1=$BLUE; TEXTEFFECT_1=$BOLD
+  FONT_COLOR_2=$WHITE; BACKGROUND_2=$D_GRAY; TEXTEFFECT_2=$BOLD
+  FONT_COLOR_3=$D_GRAY; BACKGROUND_3=$GREEN; TEXTEFFECT_3=$BOLD
+  PROMT_FORMAT=$CYAN_BOLD
 
 
 ##  ##  ##  ##  ##  ##  ##  ##  ##  ##  ##  ##  ##  ##  ##  ##  ##  ##  ##  
