@@ -51,13 +51,33 @@ if ! shopt -oq posix; then
 fi
 
 
-## aliases for git
+## git specific
 alias gc="git commit -m $1"
 alias gca="git commit -a"
 alias gs="git status"
 alias gaa="git add ."
 alias glog="git log"
 alias gp="git pull"
+
+## docker specific
+function docker_cleanup_containers {
+  docker ps -a | grep Exited | cut -d ' ' -f1 | xargs docker rm
+}
+
+function docker_cleanup_images {
+	docker image ls | grep \<none\> | cut -d ' ' -f46 | xargs docker rmi
+}
+
+alias dcu="docker-compose up $1"
+alias dcd="docker-compose down"
+alias dcps="docker-compose ps"
+alias dclog="docker-compose logs -f"
+
+alias dps="docker ps"
+alias dls="docker container ls $1"
+alias dils="docker image ls $1"
+alias dvls="docker volume ls"
+alias dnls="docker network ls"
 
 ################################################################################
 ####################           FANCY BASH PROMPT          ######################
