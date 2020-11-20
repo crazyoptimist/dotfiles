@@ -18,6 +18,7 @@ set ignorecase                                            " Ignores cases when s
 set noswapfile                                            " Disables swap files
 set undofile                                              " Enable keeping history across sessions, don't forget to mkdir
 set undodir=~/.vim/undo/
+set nofixeol                                              " Do not insert a new line at the end of the file automatically
 
 """"""""""""""""""""""""
 " PLUGINS
@@ -35,15 +36,20 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 " list your plugins here
-Plugin 'scrooloose/nerdtree'
-Plugin 'tomasr/molokai'
+Plugin 'preservim/nerdtree'
+Plugin 'morhetz/gruvbox'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'lifepillar/vim-mucomplete'
-Plugin 'tpope/vim-commentary'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-airline/vim-airline'
-" languages support
-Plugin 'sheerun/vim-polyglot'
+Plugin 'tpope/vim-commentary'
+Plugin 'sheerun/vim-polyglot'             " multiple language support
+" Plugin 'HerringtonDarkholme/yats.vim'     " typescript support advanced
+" Plugin 'neoclide/coc.nvim'                " typescript intellisense
+" Plugin 'yuezk/vim-js'                     " enhanced javascript support
+" Plugin 'posva/vim-vue'                    " vue syntax support
+" Plugin 'maxmellon/vim-jsx-pretty'         " react jsx syntax support
+
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -57,4 +63,4 @@ set background=dark
 let g:molokai_original=1
 let g:rehash256=1
 set t_Co=256
-colorscheme molokai
+colorscheme gruvbox
