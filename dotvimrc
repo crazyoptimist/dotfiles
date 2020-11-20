@@ -58,7 +58,7 @@ filetype plugin indent on    " required
 """"""""""""""""""""""""
 " PLUGIN SPECIFIC CONFIG
 """"""""""""""""""""""""
-" Config for choosen color scheme look great
+" Config for making choosen color scheme look great
 set background=dark
-set t_Co=256
 colorscheme gruvbox
+
