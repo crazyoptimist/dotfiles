@@ -61,11 +61,19 @@ alias gp="git pull"
 
 ## docker specific
 function docker_cleanup_containers {
-  docker ps -a | grep Exited | cut -d ' ' -f1 | xargs docker rm
+	docker ps -a | grep Exited | cut -d ' ' -f1 | xargs docker rm
 }
 
-function docker_cleanup_images {
-	docker image ls | grep \<none\> | cut -d ' ' -f46 | xargs docker rmi
+# function docker_cleanup_images {
+#   docker image ls | grep \<none\> | cut -d ' ' -f46 | xargs docker rmi
+# }
+
+docker_cleanup_images() {
+	if [ -z "$(docker images | awk '/^<none>/ {print $3}')" ]; then
+		echo "You don't have any <none> tagged images."
+	else
+		docker rmi $(docker images | awk '/^<none>/ {print $3}')
+	fi
 }
 
 alias dcu="docker-compose up $1"
