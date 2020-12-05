@@ -322,6 +322,7 @@ bash_prompt() {
 		local TITLEBAR=""
 		;;
 	esac
+        ## Add "$TITLEBAR\n" at the beginning of the below PS1 if you think it's needed.
 
 
 
@@ -329,7 +330,7 @@ bash_prompt() {
 	## BASH PROMT                                                             ##
 	## Generate promt and remove format from the rest                         ##
 	############################################################################
-	PS1="$TITLEBAR\n${PROMT_USER}${SEPARATOR_1}${PROMT_HOST}${SEPARATOR_2}${PROMT_PWD}\$(parse_git_branch)${SEPARATOR_3}${PROMT_INPUT}"
+	PS1="${PROMT_USER}${SEPARATOR_1}${PROMT_HOST}${SEPARATOR_2}${PROMT_PWD}\$(parse_git_branch)${SEPARATOR_3}\n$(tput bold)>${PROMT_INPUT}"
 
 
 
