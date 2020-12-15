@@ -1,7 +1,7 @@
-# DOTFILES
+# DOTFILES FOR CRAZYOPTIMIST AND ALL MINIMALISTS
 ## .bashrc
-<a href="https://ibb.co/DVDznWG" target="_blank"><img src="https://i.ibb.co/ngs6Sm3/dotbashrc.jpg" alt="awesome bash prompt" border="0"></a>  
+Awesome bash configuration for CrazyOptimist  
 ## .vimrc
-An awesome vim configuration for Crazy Optimist  
+Awesome vim configuration for CrazyOptimist  
 ## LICENSE
 **MIT**
