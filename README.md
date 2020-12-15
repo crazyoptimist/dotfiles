@@ -1,4 +1,4 @@
-# DOTFILES FOR CRAZYOPTIMIST AND ALL MINIMALISTS
+# Dotfiles For CrazyOptimist And All Minimalists
 ## .bashrc
 Awesome bash configuration for CrazyOptimist  
 ## .vimrc
