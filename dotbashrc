@@ -116,6 +116,14 @@ bash_prompt_command() {
 
 
 ##
+## EXTRACT GIT BRANCH NAME IF ANY
+##
+parse_git_branch() {
+   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+
+##
 ## GENERATE A FORMAT SEQUENCE
 ##
 format_font() {
@@ -216,7 +224,7 @@ bash_prompt() {
   local PROMPT_HOST=$"$TEXT_FORMAT \h "
   local PROMPT_PWD=$"$TEXT_FORMAT \${NEW_PWD} "
   local PROMPT_INPUT=$"$PROMPT_FORMAT"
-  local PROMPT_GIT=$"\$(__git_ps1)"
+  local PROMPT_GIT=$"\$(parse_git_branch)"
 
   ## BASH PROMPT
   ## Generate PROMPT and remove format from the rest
