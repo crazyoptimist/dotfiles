@@ -1,7 +1,7 @@
-# Dotfiles For CrazyOptimist And All Minimalists
+# Dotfiles for CrazyOptimist
 ## .bashrc
-Awesome bash configuration for CrazyOptimist  
+My awesome bash configuration
 ## .vimrc
-Awesome vim configuration for CrazyOptimist  
+My awesome vim configuration
 ## LICENSE
 **MIT**
