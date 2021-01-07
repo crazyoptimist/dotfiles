@@ -36,17 +36,25 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 " list your plugins here
-Plugin 'preservim/nerdtree'
 Plugin 'morhetz/gruvbox'
+Plugin 'preservim/nerdtree'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'lifepillar/vim-mucomplete'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-airline/vim-airline'
 Plugin 'tpope/vim-commentary'
-Plugin 'sheerun/vim-polyglot'             " multiple language support
+
+" Plugin 'neoclide/coc.nvim'                " autocomplete intellisense
+"                                             coc.nvim requires node.js and typescript installed and
+"                                             run :CocInstall coc-tsserver
+
+" Plugin 'vim-ruby/vim-ruby'                " ruby support
+
+" Plugin 'fatih/vim-go'                     " golang support
+
+" Plugin 'yuezk/vim-js'                     " javascript support enhanced
 " Plugin 'HerringtonDarkholme/yats.vim'     " typescript support advanced
-" Plugin 'neoclide/coc.nvim'                " typescript intellisense
-" Plugin 'yuezk/vim-js'                     " enhanced javascript support
+
 " Plugin 'posva/vim-vue'                    " vue syntax support
 " Plugin 'maxmellon/vim-jsx-pretty'         " react jsx syntax support
 
