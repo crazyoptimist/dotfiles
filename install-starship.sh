@@ -9,7 +9,7 @@ echo "Nerd Font Hack Installed Successfully!"
 
 # one of the two packages below works
 # apt install fonts-symbola
-apt install fonts-noto-color-emoji
+sudo apt install fonts-noto-color-emoji
 
 # install the pre-compiled binary of starship
 curl -s https://api.github.com/repos/starship/starship/releases/latest \
@@ -24,6 +24,6 @@ tar xvf starship-*.tar.gz
 sudo mv starship /usr/local/bin/
 starship --version
 
-# add this line to your .bashrc
-eval "$(starship init bash)"
+# add the following line to your .bashrc
+# eval "$(starship init bash)"
 
