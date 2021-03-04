@@ -1,7 +1,11 @@
 # Dotfiles for CrazyOptimist
+
 ## .bashrc
-My awesome bash configuration
+light.bashrc - minimalist's bash prompt, classic  
+normal.bashrc - I'm addicted to starship which is built with rust  
+
 ## .vimrc
-My awesome vim configuration
+just vimrc for engineer  
+
 ## LICENSE
 **MIT**

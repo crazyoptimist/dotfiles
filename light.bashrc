@@ -1,5 +1,5 @@
-# uncomment the below line if necessary
-# export EDITOR=vim
+# comment the below line if you do not love vim
+export EDITOR=vim
 
 # if not running interactively, don't do anything
 case $- in
