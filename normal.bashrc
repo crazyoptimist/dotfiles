@@ -90,7 +90,3 @@ alias dls="docker container ls $1"
 alias dils="docker image ls $1"
 alias dvls="docker volume ls"
 alias dnls="docker network ls"
-
-# shutdown
-alias shutdown="sudo shutdown -h now"
-
