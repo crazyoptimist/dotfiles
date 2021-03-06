@@ -2,10 +2,10 @@
 
 ## .bashrc
 light.bashrc - minimalist's bash prompt, classic  
-normal.bashrc - I'm addicted to starship which is built with rust  
+normal.bashrc - starship is written in rust and is worth to be addicted  
 
 ## .vimrc
-just vimrc for engineer  
+minimalist's vimrc for engineers  
 
 ## LICENSE
 **MIT**
