@@ -7,8 +7,12 @@ unzip Hack.zip -d ~/.fonts
 fc-cache -fv
 echo "Nerd Font Hack Installed Successfully!"
 
-# one of the two packages below works
-# apt install fonts-symbola
+# install emoji fonts package
+# for arch linux:
+# pacman -S noto-fonts-emoji
+# for centos/fedora
+# dnf install google-noto-emoji-fonts
+# for debian/ubuntu
 sudo apt install fonts-noto-color-emoji
 
 # install the pre-compiled binary of starship
