@@ -1,11 +1,11 @@
 # Dotfiles for CrazyOptimist
 
-## .bashrc
-light.bashrc - minimalist's bash prompt, classic  
-normal.bashrc - starship is written in rust and is worth to be addicted  
+## bashrc
+Minimalist's bashrc for engineers.  
+[Starship](https://github.com/starship/starship) is written in rust and is worth to be addicted.  
 
-## .vimrc
-minimalist's vimrc for engineers  
+## vimrc
+Minimalist's vimrc for engineers  
 
 ## LICENSE
 **MIT**

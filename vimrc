@@ -45,18 +45,18 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-airline/vim-airline'
 Plugin 'tpope/vim-commentary'
 
-" Plugin 'neoclide/coc.nvim'                " autocomplete intellisense
-"                                             coc.nvim requires node.js and typescript installed and
-"                                             run :CocInstall coc-tsserver
+" autocomplete intellisense. coc.nvim requires node.js and typescript installed and you can install language server extensions using `:CocInstall extension-name`. recommended extensions are coc-tsserver, coc-html, coc-emmet, coc-css.
+" Plugin 'neoclide/coc.nvim'                
+
+" Plugin 'yuezk/vim-js'                     " javascript support enhanced
+" Plugin 'HerringtonDarkholme/yats.vim'     " typescript support advanced
 
 " Plugin 'vim-ruby/vim-ruby'                " ruby support
 
 " Plugin 'fatih/vim-go'                     " golang support
 
-" Plugin 'yuezk/vim-js'                     " javascript support enhanced
-" Plugin 'HerringtonDarkholme/yats.vim'     " typescript support advanced
-
 " Plugin 'posva/vim-vue'                    " vue syntax support
+
 " Plugin 'maxmellon/vim-jsx-pretty'         " react jsx syntax support
 
 
