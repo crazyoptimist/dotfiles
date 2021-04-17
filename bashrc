@@ -57,13 +57,14 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 # git specific
+alias gs="git status"
+alias glog="git log"
+alias gaa="git add ."
 alias gc="git commit -m $1"
 alias gca="git commit -a"
-alias gs="git status"
-alias gaa="git add ."
-alias glog="git log"
 alias gp="git pull"
 alias gd="git diff"
+alias gpush="git push $1 $2"
 export GPG_TTY=$(tty)
 
 # docker specific
