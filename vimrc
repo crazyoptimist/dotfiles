@@ -48,17 +48,14 @@ Plugin 'tpope/vim-commentary'
 " autocomplete intellisense. coc.nvim requires node.js and typescript installed and you can install language server extensions using `:CocInstall extension-name`. recommended extensions are coc-tsserver, coc-html, coc-emmet, coc-css.
 " Plugin 'neoclide/coc.nvim'                
 
-" Plugin 'yuezk/vim-js'                     " javascript support enhanced
-" Plugin 'HerringtonDarkholme/yats.vim'     " typescript support advanced
-
 " Plugin 'vim-ruby/vim-ruby'                " ruby support
-
 " Plugin 'fatih/vim-go'                     " golang support
 
-" Plugin 'posva/vim-vue'                    " vue syntax support
-
+" Plugin 'yuezk/vim-js'                     " javascript support enhanced
+" Plugin 'HerringtonDarkholme/yats.vim'     " typescript support advanced
 " Plugin 'maxmellon/vim-jsx-pretty'         " react jsx syntax support
-
+" Plugin 'mattn/emmet-vim'                  " html auto complete
+" Plugin 'posva/vim-vue'                    " vue syntax support
 
 call vundle#end()            " required
 filetype plugin indent on    " required
