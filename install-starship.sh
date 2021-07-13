@@ -15,19 +15,9 @@ echo "Nerd Font Hack Installed Successfully!"
 # for debian/ubuntu
 sudo apt install fonts-noto-color-emoji
 
-# install the pre-compiled binary of starship
-curl -s https://api.github.com/repos/starship/starship/releases/latest \
-  | grep browser_download_url \
-  | grep x86_64-unknown-linux-gnu \
-  | cut -d '"' -f 4 \
-  | wget -qi -
-	
-tar xvf starship-*.tar.gz
-
-# move the binary to PATH
-sudo mv starship /usr/local/bin/
+# install starship
+sudo sh -c "$(curl -fsSL https://starship.rs/install.sh)"
 starship --version
 
 # add the following line to your .bashrc
 # eval "$(starship init bash)"
-
