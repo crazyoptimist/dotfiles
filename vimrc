@@ -44,6 +44,7 @@ Plugin 'lifepillar/vim-mucomplete'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-airline/vim-airline'
 Plugin 'tpope/vim-commentary'
+Plugin 'prettier/vim-prettier'
 
 " powerful autocomplete intellisense.
 " coc.nvim requires node.js installed and you can install language server extensions using `:CocInstall extension-name`.
@@ -66,8 +67,10 @@ filetype plugin indent on    " required
 """"""""""""""""""""""""
 " PLUGIN SPECIFIC CONFIG
 """"""""""""""""""""""""
-" Config for making choosen color scheme look great
+" config for making choosen color scheme look great
 set background=dark
 set t_Co=256
 colorscheme gruvbox
-
+" config for vim-prettier
+let g:prettier#autoformat = 0
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue PrettierAsync
