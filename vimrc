@@ -45,6 +45,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-airline/vim-airline'
 Plugin 'tpope/vim-commentary'
 Plugin 'prettier/vim-prettier'
+Plugin 'Yggdroot/indentLine'
 
 " powerful autocomplete intellisense.
 " coc.nvim requires node.js installed and you can install language server extensions using `:CocInstall extension-name`.
