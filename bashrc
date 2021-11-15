@@ -81,11 +81,11 @@ cleanup_docker_images() {
   fi
 }
 
-alias dcb="docker-compose build"
-alias dcu="docker-compose up $1"
-alias dcd="docker-compose down"
-alias dcps="docker-compose ps"
-alias dclog="docker-compose logs -f"
+alias dcb="docker compose build"
+alias dcu="docker compose up $1"
+alias dcd="docker compose down"
+alias dcps="docker compose ps"
+alias dclog="docker compose logs -f"
 
 alias dps="docker ps"
 alias dls="docker container ls $1"
