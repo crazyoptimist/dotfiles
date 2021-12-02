@@ -70,16 +70,21 @@ export GPG_TTY=$(tty)
 
 # docker specific
 cleanup_docker_containers() {
-  docker ps -a | grep Exited | cut -d ' ' -f1 | xargs docker rm
+  if [ -z "$(docker ps -a | grep -e Exited -e Created)" ]; then
+    echo "Hooray, there is no dangling containers!"
+  else
+    docker ps -a | grep -e Exited -e Created | cut -d ' ' -f1 | xargs docker rm
+  fi
 }
 
 cleanup_docker_images() {
   if [ -z "$(docker images | awk '/^<none>/ {print $3}')" ]; then
-    echo "You don't have any <none> tagged images."
+    echo "Hooray, there is no <none> tagged images!"
   else
     docker rmi $(docker images | awk '/^<none>/ {print $3}')
   fi
 }
+
 
 alias dcb="docker compose build"
 alias dcu="docker compose up $1"
