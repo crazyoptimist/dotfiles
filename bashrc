@@ -97,3 +97,7 @@ alias dls="docker container ls $1"
 alias dils="docker image ls $1"
 alias dvls="docker volume ls"
 alias dnls="docker network ls"
+
+# ruby specific
+# source ~/.rvm/scripts/rvm
+# rvm use ruby 2.7.2@gemset-name
