@@ -96,3 +96,6 @@ let g:coc_global_extensions = ['coc-solargraph', 'coc-json']
 
 "config for fzf
 nmap <C-P> :FZF<CR>
+
+"config for nerdtree
+nnoremap <C-N> :NERDTreeToggle<CR>
