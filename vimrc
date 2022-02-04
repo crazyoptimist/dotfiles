@@ -45,13 +45,16 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'tpope/vim-commentary'
 Plugin 'prettier/vim-prettier'
 Plugin 'Yggdroot/indentLine'
+Plugin 'junegunn/fzf'
 
 " powerful autocomplete intellisense.
 " coc.nvim requires node.js installed and you can install language server extensions using `:CocInstall extension-name`.
-" recommended extensions are coc-tsserver (requires typescript), coc-html, coc-css.
+" recommended extensions are coc-tsserver (requires typescript), coc-json, coc-html, coc-css.
 " Plugin 'neoclide/coc.nvim'                
 
 " Plugin 'vim-ruby/vim-ruby'                " ruby support
+" Plugin 'keith/rspec.vim'
+
 " Plugin 'fatih/vim-go'                     " golang support
 
 " Plugin 'yuezk/vim-js'                     " javascript support enhanced
@@ -88,4 +91,8 @@ function! s:check_back_space() abort
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
+" config for coc-nvim with ruby
 let g:coc_global_extensions = ['coc-solargraph', 'coc-json']
+
+"config for fzf
+nmap <C-P> :FZF<CR>
