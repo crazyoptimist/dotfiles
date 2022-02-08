@@ -92,10 +92,11 @@ function! s:check_back_space() abort
 endfunction
 
 " config for coc-nvim with ruby
-let g:coc_global_extensions = ['coc-solargraph', 'coc-json']
+let g:coc_global_extensions = ['coc-solargraph']
 
 "config for fzf
 nmap <C-P> :FZF<CR>
+let $FZF_DEFAULT_COMMAND='find . \( -name node_modules -o -name .git \) -prune -o -print'
 
 "config for nerdtree
 nnoremap <C-N> :NERDTreeToggle<CR>
