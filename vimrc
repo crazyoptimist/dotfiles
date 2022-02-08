@@ -44,7 +44,6 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-airline/vim-airline'
 Plugin 'tpope/vim-commentary'
 Plugin 'prettier/vim-prettier'
-Plugin 'Yggdroot/indentLine'
 Plugin 'junegunn/fzf'
 
 " powerful autocomplete intellisense.
