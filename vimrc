@@ -91,7 +91,7 @@ function! s:check_back_space() abort
 endfunction
 
 " config for coc-nvim with ruby
-let g:coc_global_extensions = ['coc-solargraph']
+" let g:coc_global_extensions = ['coc-tsserver', 'coc-json', 'coc-go', 'coc-solargraph']
 
 "config for fzf
 nmap <C-P> :FZF<CR>
