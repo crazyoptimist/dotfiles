@@ -56,6 +56,8 @@ Plugin 'junegunn/fzf'
 
 " Plugin 'fatih/vim-go'                     " golang support
 
+" Plugin 'hashivim/vim-terraform'           " terraform support
+
 " Plugin 'yuezk/vim-js'                     " javascript support enhanced
 " Plugin 'HerringtonDarkholme/yats.vim'     " typescript support advanced
 " Plugin 'maxmellon/vim-jsx-pretty'         " react jsx syntax support
