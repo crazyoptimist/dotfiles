@@ -37,7 +37,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 " list your plugins here
-Plugin 'Luxed/ayu-vim'
+Plugin 'morhetz/gruvbox'
 Plugin 'preservim/nerdtree'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'airblade/vim-gitgutter'
@@ -75,11 +75,7 @@ filetype plugin indent on    " required
 set background=dark
 set termguicolors                   " enable true colors support
 set t_Co=256
-colorscheme ayu
-
-let g:ayu_italic_comment = 1        " defaults to 0.
-let g:ayu_sign_contrast = 1         " defaults to 0. If set to 1, SignColumn and FoldColumn will have a higher contrast instead of using the Normal background
-let g:ayu_extended_palette = 1      " defaults to 0. If set to 1, enables extended palette. Adds more colors to some highlights (function keyword, loops, conditionals, imports)
+colorscheme gruvbox
 
 " config for vim-prettier
 let g:prettier#autoformat = 0
