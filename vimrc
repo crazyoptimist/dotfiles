@@ -1,9 +1,10 @@
-" .vimrc by CrazyOptimist
-" DO NOT PUT ANY LINE YOU DO NOT KNOW WHAT IT IS
+" .vimrc by crazyoptimist
+" DO NOT ADD ANYTHING UNLESS YOU DO KNOW WHAT IT IS
 
 """"""""""""""""""""""""
-" VIM OPTIONS BEGIN
+" VIM BASIC CONFIG
 """"""""""""""""""""""""
+
 syntax enable                                             " Enables syntax highlight
 set number                                                " Shows line numbers
 set ruler                                                 " Shows the rulers
@@ -24,10 +25,11 @@ set backspace=indent,eol,start                            " Enable backspace key
 """"""""""""""""""""""""
 " PLUGINS
 """"""""""""""""""""""""
+
 " Begin Vundle setup - a plugin manager
 " git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 " :PluginInstall
-set nocompatible              " we are not gonna use vi, required
+set nocompatible              " we are not going to use vi, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
@@ -36,6 +38,7 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+
 " list your plugins here
 Plugin 'morhetz/gruvbox'
 Plugin 'preservim/nerdtree'
@@ -71,9 +74,10 @@ filetype plugin indent on    " required
 """"""""""""""""""""""""
 " PLUGIN SPECIFIC CONFIG
 """"""""""""""""""""""""
+
 " config for making choosen color scheme look great
 set background=dark
-set termguicolors                   " enable true colors support
+set termguicolors                           " enable true colors support
 set t_Co=256
 colorscheme gruvbox
 
@@ -102,3 +106,7 @@ let $FZF_DEFAULT_COMMAND='find . \( -name node_modules -o -name .git \) -prune -
 
 "config for nerdtree
 nnoremap <C-N> :NERDTreeToggle<CR>
+
+""""""""""""""""""""""""
+" THE END
+""""""""""""""""""""""""
