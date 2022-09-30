@@ -49,10 +49,7 @@ Plugin 'tpope/vim-commentary'
 Plugin 'prettier/vim-prettier'
 Plugin 'junegunn/fzf'
 
-" powerful autocomplete intellisense.
-" coc.nvim requires node.js installed and you can install language server extensions using `:CocInstall extension-name`.
-" recommended extensions are coc-tsserver (requires typescript), coc-json, coc-html, coc-css.
-" Plugin 'neoclide/coc.nvim'                
+" Plugin 'neoclide/coc.nvim'                " requires node.js installed,
 
 " Plugin 'vim-ruby/vim-ruby'                " ruby support
 " Plugin 'keith/rspec.vim'
@@ -96,9 +93,16 @@ function! s:check_back_space() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
+" useful commands are :CocInstall, :CocConfig
 
-" config for coc-nvim with ruby
-" let g:coc_global_extensions = ['coc-tsserver', 'coc-json', 'coc-go', 'coc-solargraph']
+" javascript/typescript
+" let g:coc_global_extensions = ['coc-tsserver', 'coc-json', 'coc-html', 'coc-css']
+" ruby
+" let g:coc_global_extensions = ['coc-solargraph', 'coc-json']
+" go
+" let g:coc_global_extensions = ['coc-go', 'coc-json']
+" python
+" let g:coc_global_extensions = ['coc-pyright', 'coc-json']
 
 "config for fzf
 nmap <C-P> :FZF<CR>
