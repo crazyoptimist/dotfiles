@@ -101,3 +101,7 @@ alias dnls="docker network ls"
 # ruby specific
 # source ~/.rvm/scripts/rvm
 # rvm use ruby 2.7.2@gemset-name
+
+# python specific
+# export PATH="$HOME/.local/bin:$PATH"
+# alias python="python3"
