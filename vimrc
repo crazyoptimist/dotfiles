@@ -92,9 +92,7 @@ inoremap <silent><expr> <TAB>
       \ CheckBackSpace() ? "\<Tab>" :
       \ coc#refresh()
 inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
-inoremap <silent><expr> <cr> coc#pum#visible() && coc#pum#info()['index'] != -1 ? coc#pum#confirm() :
-        \ "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
-" useful commands are :CocInstall, :CocConfig
+" useful commands are :CocInstall, :CocConfig, :h coc-completion-example
 
 " javascript/typescript
 " let g:coc_global_extensions = ['coc-tsserver', 'coc-json', 'coc-html', 'coc-css']
