@@ -105,3 +105,9 @@ alias dnls="docker network ls"
 # python specific
 # export PATH="$HOME/.local/bin:$PATH"
 # alias python="python3"
+
+# terraform specific(cli auto-complete)
+# complete -C /usr/local/bin/terraform terraform
+
+# go specific
+# export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
