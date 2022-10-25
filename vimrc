@@ -94,6 +94,10 @@ inoremap <silent><expr> <TAB>
 inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
 " useful commands are :CocInstall, :CocConfig, :h coc-completion-example
 
+" tab config for different languages
+autocmd BufEnter *.py :setlocal softtabstop=4 shiftwidth=4 expandtab
+autocmd BufEnter *.go :setlocal softtabstop=8 shiftwidth=8 expandtab
+
 " javascript/typescript
 " let g:coc_global_extensions = ['coc-tsserver', 'coc-json', 'coc-html', 'coc-css']
 " ruby
@@ -103,7 +107,7 @@ inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
 " python
 " let g:coc_global_extensions = ['coc-pyright', 'coc-json']
 
-"config for fzf
+" config for fzf
 nmap <C-P> :FZF<CR>
 let $FZF_DEFAULT_COMMAND='find . \( -name node_modules -o -name .git \) -prune -o -print'
 
