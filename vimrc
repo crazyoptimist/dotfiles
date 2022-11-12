@@ -52,8 +52,8 @@ Plug 'junegunn/fzf'
 
 " Plug 'hashivim/vim-terraform'           " terraform support
 
-" Plug 'yuezk/vim-js'                     " javascript support enhanced
-" Plug 'HerringtonDarkholme/yats.vim'     " typescript support advanced
+" Plug 'pangloss/vim-javascript'          " javascript support
+" Plug 'HerringtonDarkholme/yats.vim'     " typescript support
 " Plug 'maxmellon/vim-jsx-pretty'         " react jsx syntax support
 " Plug 'mattn/emmet-vim'                  " html auto complete
 " Plug 'posva/vim-vue'                    " vue syntax support
