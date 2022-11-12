@@ -34,29 +34,29 @@ set backspace=indent,eol,start                            " Enable backspace key
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 
 " list your plugins here
-Plugin 'morhetz/gruvbox'
-Plugin 'preservim/nerdtree'
-Plugin 'jiangmiao/auto-pairs'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'vim-airline/vim-airline'
-Plugin 'tpope/vim-commentary'
-Plugin 'prettier/vim-prettier'
-Plugin 'junegunn/fzf'
+Plug 'morhetz/gruvbox'
+Plug 'preservim/nerdtree'
+Plug 'jiangmiao/auto-pairs'
+Plug 'airblade/vim-gitgutter'
+Plug 'vim-airline/vim-airline'
+Plug 'tpope/vim-commentary'
+Plug 'prettier/vim-prettier'
+Plug 'junegunn/fzf'
 
-" Plugin 'neoclide/coc.nvim'                " requires node.js installed,
+" Plug 'neoclide/coc.nvim'                " requires node.js installed,
 
-" Plugin 'vim-ruby/vim-ruby'                " ruby support
-" Plugin 'keith/rspec.vim'
+" Plug 'vim-ruby/vim-ruby'                " ruby support
+" Plug 'keith/rspec.vim'
 
-" Plugin 'fatih/vim-go'                     " golang support
+" Plug 'fatih/vim-go'                     " golang support
 
-" Plugin 'hashivim/vim-terraform'           " terraform support
+" Plug 'hashivim/vim-terraform'           " terraform support
 
-" Plugin 'yuezk/vim-js'                     " javascript support enhanced
-" Plugin 'HerringtonDarkholme/yats.vim'     " typescript support advanced
-" Plugin 'maxmellon/vim-jsx-pretty'         " react jsx syntax support
-" Plugin 'mattn/emmet-vim'                  " html auto complete
-" Plugin 'posva/vim-vue'                    " vue syntax support
+" Plug 'yuezk/vim-js'                     " javascript support enhanced
+" Plug 'HerringtonDarkholme/yats.vim'     " typescript support advanced
+" Plug 'maxmellon/vim-jsx-pretty'         " react jsx syntax support
+" Plug 'mattn/emmet-vim'                  " html auto complete
+" Plug 'posva/vim-vue'                    " vue syntax support
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
