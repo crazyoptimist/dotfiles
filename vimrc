@@ -26,18 +26,12 @@ set backspace=indent,eol,start                            " Enable backspace key
 " PLUGINS
 """"""""""""""""""""""""
 
-" Begin Vundle setup - a plugin manager
-" git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-" :PluginInstall
-set nocompatible              " we are not going to use vi, required
-filetype off                  " required
+" Install vim-plug, a plugin manager. For nvim, see their docs
+" curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+" :PlugInstall
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
+" Plugins will be downloaded under the specified directory.
+call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 
 " list your plugins here
 Plugin 'morhetz/gruvbox'
@@ -64,9 +58,8 @@ Plugin 'junegunn/fzf'
 " Plugin 'mattn/emmet-vim'                  " html auto complete
 " Plugin 'posva/vim-vue'                    " vue syntax support
 
-call vundle#end()            " required
-filetype plugin indent on    " required
-" End Vundle setup
+" List ends here. Plugins become visible to Vim after this call.
+call plug#end()
 
 """"""""""""""""""""""""
 " PLUGIN SPECIFIC CONFIG
