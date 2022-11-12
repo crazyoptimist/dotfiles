@@ -43,7 +43,7 @@ Plug 'tpope/vim-commentary'
 Plug 'prettier/vim-prettier'
 Plug 'junegunn/fzf'
 
-" Plug 'neoclide/coc.nvim'                " requires node.js installed,
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}   " requires node.js installed
 
 " Plug 'vim-ruby/vim-ruby'                " ruby support
 " Plug 'keith/rspec.vim'
