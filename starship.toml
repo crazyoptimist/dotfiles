@@ -1,0 +1,6 @@
+# ~/.config/starship.toml
+[time]
+disabled = false
+time_format = "%R" # Hour:Minute Format
+style = "bg:#000"
+format = '[ ♥ $time ]($style)'
