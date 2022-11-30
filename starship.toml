@@ -1,6 +1,14 @@
 # ~/.config/starship.toml
+[username]
+format = "[$user](yellow) @ "
+disabled = false
+show_always = true
+[hostname]
+ssh_only = false
+format =  "[workspace](green) in "
+disabled = false
 [time]
 disabled = false
 time_format = "%R" # Hour:Minute Format
 style = "bg:#000"
-format = '[ ♥ $time ]($style)'
+format = "[⌛ $time ]($style)"
