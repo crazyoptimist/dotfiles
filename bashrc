@@ -98,6 +98,9 @@ alias dils="docker image ls $1"
 alias dvls="docker volume ls"
 alias dnls="docker network ls"
 
+# wsl specific
+# alias start-docker="sudo service docker start"
+
 # ruby specific
 # source ~/.rvm/scripts/rvm
 # rvm use ruby 2.7.2@gemset-name
