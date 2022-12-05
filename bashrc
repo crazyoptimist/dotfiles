@@ -99,7 +99,7 @@ alias dvls="docker volume ls"
 alias dnls="docker network ls"
 
 # wsl specific
-# alias start-docker="sudo service docker start"
+# alias docker-start="sudo service docker start"
 
 # ruby specific
 # source ~/.rvm/scripts/rvm
