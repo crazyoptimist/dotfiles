@@ -1,5 +1,5 @@
-# comment the below line if you do not love vim
 export EDITOR=vim
+# use starship as shell prompt
 eval "$(starship init bash)"
 
 # if not running interactively, don't do anything
