@@ -42,6 +42,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-commentary'
 Plug 'prettier/vim-prettier'
 Plug 'junegunn/fzf'
+Plug 'ryanoasis/vim-devicons'
 
 " Plug 'neoclide/coc.nvim', {'branch': 'release'}   " requires node.js installed
 
