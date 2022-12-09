@@ -3,7 +3,7 @@
 ## bashrc
 
 bashrc for minimalists  
-[Starship](https://github.com/starship/starship) is written in rust and is worth to be addicted.  
+[starship](https://github.com/starship/starship) is a shell prompt written in rust and is worth to be addicted.  
 
 ## vimrc
 
