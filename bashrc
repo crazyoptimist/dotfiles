@@ -101,11 +101,13 @@ alias dnls="docker network ls"
 # wsl specific
 # alias docker-start="sudo service docker start"
 
-# ruby specific
-# source ~/.rvm/scripts/rvm
-# rvm use ruby 2.7.2@gemset-name
+# ruby specific(rbenv)
+# eval "$(~/.rbenv/bin/rbenv init - bash)"
 
-# python specific
+# python specific(pyenv)
+# export PYENV_ROOT="$HOME/.pyenv"
+# command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+# eval "$(pyenv init -)"
 # export PATH="$HOME/.local/bin:$PATH"
 # alias python="python3"
 
