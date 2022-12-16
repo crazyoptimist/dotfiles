@@ -1,13 +1,15 @@
-# dotfiles by crazyoptimist
+# DOTFILES BY CRAZYOPTIMIST
 
-## bashrc
+I'm a vim addict.
 
-bashrc for minimalists  
-[starship](https://github.com/starship/starship) is a shell prompt written in rust and is worth to be addicted.  
+## SETUP
 
-## vimrc
-
-vimrc for minimalists
+```bash
+cat bashrc > ~/.bashrc
+cat profile > ~/.profile
+cat tmux.conf > ~/.tmux.conf
+cat vimrc > ~/.vimrc
+```
 
 ## LICENSE
 
