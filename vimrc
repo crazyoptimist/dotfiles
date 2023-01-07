@@ -6,6 +6,7 @@
 """"""""""""""""""""""""
 
 syntax enable                                             " Enables syntax highlight
+set number                                                " Shows line numbers
 set relativenumber                                        " Shows relative line numbers
 set ruler                                                 " Shows the rulers
 set showcmd                                               " Shows current cursor info
