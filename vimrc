@@ -1,5 +1,4 @@
-" .vimrc by crazyoptimist
-" DO NOT ADD ANYTHING UNLESS YOU DO KNOW WHAT IT IS
+" .vimrc for minimalists, crafted by crazyoptimist
 
 """"""""""""""""""""""""
 " VIM BASIC CONFIG
@@ -105,8 +104,17 @@ autocmd BufEnter *.go :setlocal softtabstop=8 shiftwidth=8 expandtab
 nmap <C-P> :FZF<CR>
 let $FZF_DEFAULT_COMMAND='find . \( -name node_modules -o -name .git \) -prune -o -print'
 
-"config for nerdtree
+" config for nerdtree
 nnoremap <C-N> :NERDTreeToggle<CR>
+
+" syntax highlight in vim-go
+let g:go_highlight_types = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_function_calls = 1
+let g:go_highlight_extra_types = 1
+let g:go_highlight_operators = 1
+
 
 """"""""""""""""""""""""
 " THE END
