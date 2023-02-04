@@ -67,13 +67,17 @@ call plug#end()
 
 " config for making choosen color scheme look great
 set background=dark
-set termguicolors                           " enable true colors support
+set termguicolors   " enable true colors support
 set t_Co=256
 colorscheme gruvbox
 
 " config for vim-prettier
 let g:prettier#autoformat = 0
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue PrettierAsync
+
+" tab config for different languages
+autocmd BufEnter *.py :setlocal softtabstop=4 shiftwidth=4 expandtab
+autocmd BufEnter *.go :setlocal softtabstop=8 shiftwidth=8 expandtab
 
 " config for coc.nvim
 function! CheckBackSpace() abort
@@ -87,18 +91,13 @@ inoremap <silent><expr> <TAB>
 inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
 " useful commands are :CocInstall, :CocConfig, :h coc-completion-example
 
-" tab config for different languages
-autocmd BufEnter *.py :setlocal softtabstop=4 shiftwidth=4 expandtab
-autocmd BufEnter *.go :setlocal softtabstop=8 shiftwidth=8 expandtab
-
-" javascript/typescript
-" let g:coc_global_extensions = ['coc-tsserver', 'coc-json', 'coc-html', 'coc-css']
-" ruby
-" let g:coc_global_extensions = ['coc-solargraph', 'coc-json']
-" go
-" let g:coc_global_extensions = ['coc-go', 'coc-json']
-" python
-" let g:coc_global_extensions = ['coc-pyright', 'coc-json']
+" coc.nvim extensions
+let g:coc_global_extensions = ['coc-json', 'coc-go']
+" go: 'coc-go'
+" ruby: 'coc-solargraph'
+" python: 'coc-pyright'
+" typescript: 'coc-tsserver'
+" html, css: 'coc-html', 'coc-css', 'coc-emmet'
 
 " config for fzf
 nmap <C-P> :FZF<CR>
