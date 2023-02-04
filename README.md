@@ -1,6 +1,6 @@
 # DOTFILES BY CRAZYOPTIMIST
 
-I'm a vim addict.
+Vim addict lost in vim :poop:
 
 ## SETUP
 
