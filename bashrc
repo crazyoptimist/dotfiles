@@ -54,20 +54,20 @@ if ! shopt -oq posix; then
 fi
 
 # git specific
-alias gs="git status"
-alias glog="git log"
 alias gaa="git add ."
 alias gcm="git commit"
-alias gch="git checkout $1"
-alias gp="git pull"
 alias gd="git diff"
-alias gpush="git push $1 $2"
+alias glog="git log"
+alias gp="git pull"
+alias gpush="git push"
+alias gs="git status"
+alias gsw="git switch"
 export GPG_TTY=$(tty)
 
 # docker specific
 cleanup_docker_containers() {
   if [ -z "$(docker ps -a | grep -e Exited -e Created)" ]; then
-    echo "Hooray, there is no dangling containers!"
+    echo "Hooray, there is no dangling container!"
   else
     docker ps -a | grep -e Exited -e Created | cut -d ' ' -f1 | xargs docker rm
   fi
@@ -75,7 +75,7 @@ cleanup_docker_containers() {
 
 cleanup_docker_images() {
   if [ -z "$(docker images | awk '/^<none>/ {print $3}')" ]; then
-    echo "Hooray, there is no <none> tagged images!"
+    echo "Hooray, there is no <none> tagged image!"
   else
     docker rmi $(docker images | awk '/^<none>/ {print $3}')
   fi
