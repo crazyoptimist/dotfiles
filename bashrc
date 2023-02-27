@@ -61,6 +61,7 @@ alias glog="git log"
 alias gp="git pull"
 alias gpush="git push"
 alias gs="git status"
+alias gstash="git stash"
 alias gsw="git switch"
 export GPG_TTY=$(tty)
 
