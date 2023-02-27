@@ -6,16 +6,16 @@ fc-cache -fv
 echo "Installed a nerd font successfully!"
 
 ## install emoji fonts package
-## for arch linux:
-# pacman -S noto-fonts-emoji
-## for centos/fedora
-# dnf install google-noto-emoji-fonts
 ## for debian/ubuntu
 sudo apt install fonts-noto-color-emoji
+## for centos/fedora
+# dnf install google-noto-emoji-fonts
+## for arch linux:
+# pacman -S noto-fonts-emoji
 
 # install starship
 sudo sh -c "$(curl -fsSL https://starship.rs/install.sh)"
 starship --version
 
-## add following line to your .bashrc
-# eval "$(starship init bash)"
+echo "Add following line to your .bashrc to use starship:"
+echo eval \"\$\(starship init bash\)\"

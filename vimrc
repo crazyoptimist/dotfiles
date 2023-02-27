@@ -17,7 +17,7 @@ set hlsearch                                              " Automatically highli
 set incsearch                                             " Searches incremetally as you type.
 set ignorecase                                            " Ignores cases when searching
 set noswapfile                                            " Disables swap files
-set undofile                                              " Enable keeping history across sessions, don't forget to mkdir
+set undofile                                              " Enable keeping history across sessions, don't forget to create the undo folder `mkdir -p ~/.vim/undo`
 set undodir=~/.vim/undo/
 set nofixeol                                              " Do not insert a new line at the end of the file automatically
 set backspace=indent,eol,start                            " Enable backspace key to delete stuffs properly
