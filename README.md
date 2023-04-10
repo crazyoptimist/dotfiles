@@ -1,17 +1,17 @@
 # DOTFILES BY CRAZYOPTIMIST
 
-Vim addict lost in vim :poop:
+Yes, I am vim addict :poop:
 
 ## SETUP
 
 ```bash
-cat bashrc > ~/.bashrc
-cat profile > ~/.profile
-cat tmux.conf > ~/.tmux.conf
-cat vimrc > ~/.vimrc
+make
 ```
 
-[lsd](https://github.com/Peltoche/lsd) and [bat](https://github.com/sharkdp/bat) are my favorite cli utils replacing `ls` and `cat`.
+## MORE
+
+* [A better ls(1)](https://github.com/Peltoche/lsd)
+* [A better cat(1)](https://github.com/sharkdp/bat)
 
 ## LICENSE
 
