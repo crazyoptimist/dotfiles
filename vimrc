@@ -35,7 +35,6 @@ call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 
 " list your plugins here
 Plug 'gruvbox-community/gruvbox'
-Plug 'preservim/nerdtree'
 Plug 'jiangmiao/auto-pairs'
 Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
@@ -64,6 +63,15 @@ call plug#end()
 """"""""""""""""""""""""
 " PLUGIN SPECIFIC CONFIG
 """"""""""""""""""""""""
+
+" use netrw as file explorer
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_winsize = 25
+let g:netrw_browse_split = 4
+let g:netrw_altv = 1
+let g:netrw_list_hide = '.git/,node_modules/,dist/,build/,__pycache__/'
+nnoremap <C-N> :Lexplore<CR>
 
 " config for making choosen color scheme look great
 set background=dark
@@ -102,9 +110,6 @@ let g:coc_global_extensions = ['coc-json', 'coc-go']
 " config for fzf
 nmap <C-P> :FZF<CR>
 let $FZF_DEFAULT_COMMAND='find . \( -name node_modules -o -name .git \) -prune -o -print'
-
-" config for nerdtree
-nnoremap <C-N> :NERDTreeToggle<CR>
 
 " syntax highlight in vim-go
 let g:go_highlight_types = 1
