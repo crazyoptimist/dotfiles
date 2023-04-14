@@ -35,6 +35,7 @@ call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 
 " list your plugins here
 Plug 'gruvbox-community/gruvbox'
+Plug 'lambdalisue/fern.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
@@ -64,14 +65,9 @@ call plug#end()
 " PLUGIN SPECIFIC CONFIG
 """"""""""""""""""""""""
 
-" use netrw as file explorer
-let g:netrw_banner = 0
-let g:netrw_liststyle = 3
-let g:netrw_winsize = 25
-let g:netrw_browse_split = 4
-let g:netrw_altv = 1
-let g:netrw_list_hide = '.git/,node_modules/,dist/,build/,__pycache__/'
-nnoremap <C-N> :Lexplore<CR>
+" fern.vim config
+let g:fern#drawer_width = 30
+nnoremap <C-N> :Fern . -drawer -toggle -reveal=%<CR>
 
 " config for making choosen color scheme look great
 set background=dark
