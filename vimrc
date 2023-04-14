@@ -21,6 +21,11 @@ set undofile                                              " Enable keeping histo
 set undodir=~/.vim/undo/
 set nofixeol                                              " Do not insert a new line at the end of the file automatically
 set backspace=indent,eol,start                            " Enable backspace key to delete stuffs properly
+let mapleader=","                                         " Map leader to comma
+" Mapping: Switch to the next buffer
+map <leader>n :bnext<CR>
+" Mapping: Close the current buffer
+map <leader>d :bd<CR>
 
 """"""""""""""""""""""""
 " PLUGINS
@@ -65,8 +70,20 @@ call plug#end()
 " PLUGIN SPECIFIC CONFIG
 """"""""""""""""""""""""
 
+" airline config to use buffers smartly
+" enable the list of buffers
+let g:airline#extensions#tabline#enabled = 1
+" show filename only
+let g:airline#extensions#tabline#fnamemod = ':t'
+
 " fern.vim config
 let g:fern#drawer_width = 30
+let g:fern#default_hidden = 1
+augroup fern_config
+  autocmd!
+  autocmd FileType fern set nonumber
+  autocmd FileType fern set norelativenumber
+augroup END
 nnoremap <C-N> :Fern . -drawer -toggle -reveal=%<CR>
 
 " config for making choosen color scheme look great
