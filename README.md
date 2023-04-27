@@ -1,6 +1,6 @@
 # DOTFILES BY CRAZYOPTIMIST
 
-Yes, I am vim addict :poop:
+I am a minimalist and a Vim addict who believes in the power of simplicity and efficiency. As a minimalist, I strive to live a clutter-free life and focus on what truly matters. Vim, with its powerful editing features and customization options, helps me work faster and smarter. In my free time, I enjoy exploring new ways to simplify my life and improve my Vim skills. 🐳 🥋 🥩
 
 ## SETUP
 
