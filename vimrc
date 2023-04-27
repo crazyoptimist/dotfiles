@@ -71,11 +71,10 @@ call plug#end()
 " PLUGIN SPECIFIC CONFIG
 """"""""""""""""""""""""
 
-" airline config to use buffers smartly
-" enable the list of buffers
-let g:airline#extensions#tabline#enabled = 1
-" show filename only
-let g:airline#extensions#tabline#fnamemod = ':t'
+" vim-airline config
+let g:airline#extensions#tabline#enabled = 1        " enable the list of buffers
+let g:airline#extensions#tabline#fnamemod = ':t'    " show filename only
+let g:airline_powerline_fonts=1                     " use powerline fonts
 
 " fern.vim config
 let g:fern#drawer_width = 30
