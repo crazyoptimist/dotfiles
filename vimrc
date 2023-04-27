@@ -43,6 +43,7 @@ call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 Plug 'gruvbox-community/gruvbox'
 Plug 'lambdalisue/fern.vim'
 Plug 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-commentary'
@@ -74,7 +75,7 @@ call plug#end()
 " vim-airline config
 let g:airline#extensions#tabline#enabled = 1        " enable the list of buffers
 let g:airline#extensions#tabline#fnamemod = ':t'    " show filename only
-let g:airline_powerline_fonts=1                     " use powerline fonts
+let g:airline_powerline_fonts = 1                   " use powerline fonts
 
 " fern.vim config
 let g:fern#drawer_width = 30
