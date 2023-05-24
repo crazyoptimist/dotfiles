@@ -80,11 +80,6 @@ let g:airline_powerline_fonts = 1                   " use powerline fonts
 " fern.vim config
 let g:fern#drawer_width = 30
 let g:fern#default_exclude = '^\%(\.git\|node_modules\)$'
-augroup fern_config
-  autocmd!
-  autocmd FileType fern set nonumber
-  autocmd FileType fern set norelativenumber
-augroup END
 nnoremap <C-N> :Fern . -drawer -toggle -reveal=%<CR>
 
 " config for making choosen color scheme look great
