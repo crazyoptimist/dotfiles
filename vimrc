@@ -79,6 +79,7 @@ let g:airline_powerline_fonts = 1                   " use powerline fonts
 
 " fern.vim config
 let g:fern#drawer_width = 30
+let g:fern#default_hidden = 1
 let g:fern#default_exclude = '^\%(\.git\|node_modules\)$'
 nnoremap <C-N> :Fern . -drawer -toggle -reveal=%<CR>
 
