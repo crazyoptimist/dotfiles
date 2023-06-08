@@ -27,6 +27,11 @@ map <leader>n :bnext<CR>
 map <leader>p :bprevious<CR>
 " Mapping: Close the current buffer
 map <leader>d :bd<CR>
+" Navigate vim windows better
+noremap <C-K> :wincmd k<CR>
+noremap <C-J> :wincmd j<CR>
+noremap <C-H> :wincmd h<CR>
+noremap <C-L> :wincmd l<CR>
 
 """"""""""""""""""""""""
 " PLUGINS
