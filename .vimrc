@@ -21,7 +21,7 @@ set undofile                                              " Enable keeping histo
 set undodir=~/.vim/undo/
 set nofixeol                                              " Do not insert a new line at the end of the file automatically
 set backspace=indent,eol,start                            " Enable backspace key to delete stuffs properly
-let mapleader=" "                                         " Map leader to space
+let mapleader=","                                         " Map leader to comma
 " Mapping: Switch to the next/previous buffer
 map <leader>n :bnext<CR>
 map <leader>p :bprevious<CR>
