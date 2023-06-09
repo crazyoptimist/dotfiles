@@ -1,14 +1,16 @@
 # DOTFILES OF CRAZYOPTIMIST
 
-I am a Vim addict.  
-I love consistency.  
-I love learning.  
-I love making mistakes.  
+I :heart:
+- [x] consistency
+- [x] learning
+- [x] making mistakes
 
 ### SETUP
 
 ```bash
-make
+make bootstrap
+make vim
+make neovim
 ```
 
 ### NEED MORE?
