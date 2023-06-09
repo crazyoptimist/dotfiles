@@ -4,29 +4,32 @@
 " VIM BASIC CONFIG
 """"""""""""""""""""""""
 
-syntax enable                                             " Enables syntax highlight
-set number                                                " Shows line numbers
-set relativenumber                                        " Shows relative line numbers
-set ruler                                                 " Shows the rulers
-set showcmd                                               " Shows current cursor info
-set autoindent                                            " Automatically guesses the indentation given the previous one
-set shiftwidth=2                                          " Uses 2 space tabs by default
+syntax enable                                             " Enable syntax highlight
+set number                                                " Show line numbers
+set relativenumber                                        " Show relative line numbers
+set ruler                                                 " Show the rulers
+set showcmd                                               " Show current cursor info
+set autoindent                                            " Automatically guess the indentation given the previous one
+set shiftwidth=2                                          " Use 2 space tabs by default
 set softtabstop=2
 set expandtab                                             " Convert tabs into spaces
-set hlsearch                                              " Automatically highlights search results, to hide them run :noh
-set incsearch                                             " Searches incremetally as you type.
-set ignorecase                                            " Ignores cases when searching
-set noswapfile                                            " Disables swap files
+set hlsearch                                              " Highlight search results
+set cursorline                                            " Highlight current line
+set incsearch                                             " Search incremetally as you type
+set ignorecase                                            " Ignore cases when searching
+set noswapfile                                            " Disable swap files
 set undofile                                              " Enable keeping history across sessions, don't forget to create the undo folder `mkdir -p ~/.vim/undo`
 set undodir=~/.vim/undo/
 set nofixeol                                              " Do not insert a new line at the end of the file automatically
 set backspace=indent,eol,start                            " Enable backspace key to delete stuffs properly
-let mapleader=","                                         " Map leader to comma
+let mapleader=","                                         " Remap leader to comma
 " Mapping: Switch to the next/previous buffer
 map <leader>n :bnext<CR>
 map <leader>p :bprevious<CR>
 " Mapping: Close the current buffer
 map <leader>d :bd<CR>
+" Toggle search hightlight
+map <leader>h :set hlsearch!<CR>
 " Navigate vim windows better
 noremap <C-K> :wincmd k<CR>
 noremap <C-J> :wincmd j<CR>
