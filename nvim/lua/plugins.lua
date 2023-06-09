@@ -26,6 +26,12 @@ return require('packer').startup(function(use)
   -- Auto Completion
   use { 'neoclide/coc.nvim', branch='release' }
 
+  -- Telescope
+  use {
+    'nvim-telescope/telescope.nvim', branch = '0.1.x',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
