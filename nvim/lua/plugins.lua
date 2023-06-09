@@ -19,7 +19,7 @@ return require('packer').startup(function(use)
   use 'ellisonleao/gruvbox.nvim'
   use 'nvim-tree/nvim-web-devicons'
   use 'nvim-tree/nvim-tree.lua'
-  use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
+  use 'ojroques/nvim-hardline'
   use 'nvim-treesitter/nvim-treesitter'
   use 'm4xshen/autoclose.nvim'
 

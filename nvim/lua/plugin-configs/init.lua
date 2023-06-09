@@ -1,5 +1,5 @@
 require("plugin-configs.colorscheme")
-require("plugin-configs.bufferline")
+require("plugin-configs.nvim-hardline")
 require("plugin-configs.nvim-tree")
 require("plugin-configs.treesitter")
 require("plugin-configs.coc-nvim")
