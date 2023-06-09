@@ -21,6 +21,7 @@ return require('packer').startup(function(use)
   use 'nvim-tree/nvim-tree.lua'
   use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
   use 'nvim-treesitter/nvim-treesitter'
+  use 'm4xshen/autoclose.nvim'
 
   -- Auto Completion
   use { 'neoclide/coc.nvim', branch='release' }
