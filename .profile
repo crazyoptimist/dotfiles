@@ -1,5 +1,8 @@
 source ~/.bashrc
 
+# neovim
+export PATH="$PATH:/usr/local/nvim-linux64/bin"
+
 # # go specific(go1.16+)
 # export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
 
