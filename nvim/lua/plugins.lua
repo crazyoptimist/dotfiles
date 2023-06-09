@@ -1,27 +1,30 @@
--- Use lazy.nvim as plugin manager
-local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-if not vim.loop.fs_stat(lazypath) then
-  vim.fn.system({
-    "git",
-    "clone",
-    "--filter=blob:none",
-    "https://github.com/folke/lazy.nvim.git",
-    "--branch=stable", -- latest stable release
-    lazypath,
-  })
+-- Automatically install and set up packer.nvim, a plugin manager
+local ensure_packer = function()
+  local fn = vim.fn
+  local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
+  if fn.empty(fn.glob(install_path)) > 0 then
+    fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
+    vim.cmd [[packadd packer.nvim]]
+    return true
+  end
+  return false
 end
-vim.opt.rtp:prepend(lazypath)
 
-local plugins = {
-  'tpope/vim-fugitive',
-  'tpope/vim-commentary',
-  'ellisonleao/gruvbox.nvim',
-  'nvim-tree/nvim-tree.lua',
-  'nvim-tree/nvim-web-devicons',
-  'nvim-lualine/lualine.nvim',
-  'nvim-treesitter/nvim-treesitter',
+local packer_bootstrap = ensure_packer()
 
-  -- auto completion
-}
+return require('packer').startup(function(use)
+  use 'wbthomason/packer.nvim'
+  use 'tpope/vim-fugitive'
+  use 'tpope/vim-commentary'
+  use 'ellisonleao/gruvbox.nvim'
+  use 'nvim-tree/nvim-web-devicons'
+  use 'nvim-tree/nvim-tree.lua'
+  use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
+  use 'nvim-treesitter/nvim-treesitter'
 
-require("lazy").setup(plugins)
+  -- Automatically set up your configuration after cloning packer.nvim
+  -- Put this at the end after all plugins
+  if packer_bootstrap then
+    require('packer').sync()
+  end
+end)
