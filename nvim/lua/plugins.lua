@@ -27,6 +27,7 @@ return require('packer').startup(function(use)
   use { 'neoclide/coc.nvim', branch='release' }
 
   -- Telescope
+  -- :checkhealth telescope
   use {
     'nvim-telescope/telescope.nvim', branch = '0.1.x',
     requires = { {'nvim-lua/plenary.nvim'} }
