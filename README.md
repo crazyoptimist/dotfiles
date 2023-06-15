@@ -1,4 +1,4 @@
-# DOTFILES OF CRAZYOPTIMIST
+# CRAZYOPTIMIST'S DOTFILES 
 
 I :heart:
 - [x] consistency
