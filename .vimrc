@@ -10,8 +10,9 @@ set relativenumber                                        " Show relative line n
 set ruler                                                 " Show the rulers
 set showcmd                                               " Show current cursor info
 set autoindent                                            " Automatically guess the indentation given the previous one
-set shiftwidth=2                                          " Use 2 space tabs by default
-set softtabstop=2
+set tabstop=2                                             " Number of spaces that a tab counts for
+set softtabstop=2                                         " Number of spaces that a <Tab> key press counts for
+set shiftwidth=2                                          " Size of an indentation
 set expandtab                                             " Convert tabs into spaces
 set hlsearch                                              " Highlight search results
 set cursorline                                            " Highlight current line
@@ -102,8 +103,8 @@ let g:prettier#autoformat = 0
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue PrettierAsync
 
 " tab config for different languages
-autocmd BufEnter *.py :setlocal softtabstop=4 shiftwidth=4 expandtab
-autocmd BufEnter *.go :setlocal softtabstop=8 shiftwidth=8 expandtab
+autocmd BufEnter *.go :setlocal tabstop=8 softtabstop=8 shiftwidth=8 expandtab
+autocmd BufEnter *.py :setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab
 
 " config for coc.nvim
 function! CheckBackSpace() abort

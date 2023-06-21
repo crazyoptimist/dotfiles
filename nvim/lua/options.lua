@@ -2,8 +2,8 @@ vim.opt.number = true                           -- show line numbers
 vim.opt.relativenumber = true                   -- show relative line numbers
 vim.opt.autoindent = true                       -- Automatically guesses the indentation given the previous one
 -- Start Tab Config
-vim.opt.tabstop = 2                             -- size of a hard tabstop
-vim.opt.softtabstop = 2                         -- number of spaces a <Tab> counts for
+vim.opt.tabstop = 2                             -- number of spaces a tab counts for
+vim.opt.softtabstop = 2                         -- number of spaces a <Tab> key press counts for
 vim.opt.shiftwidth = 2                          -- size of an indentation
 vim.opt.expandtab = true                        -- always use spaces instead of tab characters
 -- End Tab Config
