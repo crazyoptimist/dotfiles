@@ -105,6 +105,7 @@ autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.gra
 " tab config for different languages
 autocmd BufEnter *.go :setlocal tabstop=8 softtabstop=8 shiftwidth=8 expandtab
 autocmd BufEnter *.py :setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab
+autocmd BufEnter Makefile :setlocal tabstop=8 softtabstop=0 shiftwidth=8 noexpandtab
 
 " config for coc.nvim
 function! CheckBackSpace() abort
