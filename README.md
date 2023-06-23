@@ -8,9 +8,9 @@ I :heart:
 ### SETUP
 
 ```bash
-make bootstrap
+make init
 make vim
-make neovim
+make nvim
 ```
 
 ## LICENSE
