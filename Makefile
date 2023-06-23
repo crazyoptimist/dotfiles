@@ -19,5 +19,4 @@ nvim:
 	# For Debian
 	sudo apt install build-essential -y
 
-.PHONY:
-	init vim nvim
+.PHONY: init vim nvim
