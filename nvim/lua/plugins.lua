@@ -24,7 +24,7 @@ return require('packer').startup(function(use)
   use 'm4xshen/autoclose.nvim'
 
   -- Auto Completion
-  use { 'neoclide/coc.nvim', branch='release' }
+  -- use { 'neoclide/coc.nvim', branch='release' }
 
   -- Telescope
   -- :checkhealth telescope
