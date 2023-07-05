@@ -21,7 +21,7 @@ return require('packer').startup(function(use)
   use 'nvim-tree/nvim-tree.lua'
   use 'ojroques/nvim-hardline'
   use 'nvim-treesitter/nvim-treesitter'
-  use 'm4xshen/autoclose.nvim'
+  use 'jiangmiao/auto-pairs'
 
   -- Auto Completion
   -- use { 'neoclide/coc.nvim', branch='release' }
