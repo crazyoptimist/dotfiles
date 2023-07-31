@@ -16,7 +16,7 @@ nvim:
 	sudo mv nvim-linux64/ /usr/local/
 	mkdir -p ${HOME}/.config
 	cp -r ${PWD}/nvim ${HOME}/.config/
-	# For Debian
-	sudo apt install build-essential -y
+	# For tree-sitter on Debian
+	# sudo apt install build-essential -y
 
 .PHONY: init vim nvim
