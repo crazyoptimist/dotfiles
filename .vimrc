@@ -15,7 +15,6 @@ set softtabstop=2                                         " Number of spaces tha
 set shiftwidth=2                                          " Size of an indentation
 set expandtab                                             " Convert tabs into spaces
 set hlsearch                                              " Highlight search results
-set cursorline                                            " Highlight current line
 set incsearch                                             " Search incremetally as you type
 set ignorecase                                            " Ignore cases when searching
 set noswapfile                                            " Disable swap files
