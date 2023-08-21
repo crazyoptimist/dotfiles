@@ -22,6 +22,7 @@ return require('packer').startup(function(use)
   use 'nvim-treesitter/nvim-treesitter'
   use 'ellisonleao/gruvbox.nvim'
   use 'jiangmiao/auto-pairs'
+  use 'voldikss/vim-floaterm'
 
   -- Auto Completion
   -- use { 'neoclide/coc.nvim', branch='release' }
