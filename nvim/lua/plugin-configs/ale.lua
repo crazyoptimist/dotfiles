@@ -12,5 +12,6 @@ vim.g.ale_fixers = {
     [ 'html' ] = 'prettier',
     [ 'css' ] = 'prettier',
     [ 'solidity' ] = 'prettier',
-    [ 'python' ] = 'black'
+    [ 'python' ] = 'black',
+    [ 'rust' ] = 'rustfmt'
 }
