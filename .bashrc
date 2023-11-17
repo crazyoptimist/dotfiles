@@ -109,8 +109,6 @@ export NVM_DIR="$HOME/.nvm"
 # export PYENV_ROOT="$HOME/.pyenv"
 # command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 # eval "$(pyenv init -)"
-# export PATH="$HOME/.local/bin:$PATH"
-# alias python="python3"
 
 # # ruby specific(rbenv)
 # eval "$(~/.rbenv/bin/rbenv init - bash)"
