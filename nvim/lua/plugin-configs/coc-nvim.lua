@@ -11,7 +11,6 @@ vim.g.coc_global_extensions = {
   'coc-rust-analyzer',
   -- 'coc-pyright',
   -- 'coc-go',
-  -- 'coc-solidity',
   -- 'coc-solargraph',
 }
 
