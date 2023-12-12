@@ -24,9 +24,6 @@ return require('packer').startup(function(use)
   use 'jiangmiao/auto-pairs'
   use 'voldikss/vim-floaterm'
 
-  -- Auto Completion
-  -- use { 'neoclide/coc.nvim', branch='release' }
-
   -- Telescope
   -- :checkhealth telescope
   use {

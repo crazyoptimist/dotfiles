@@ -16,6 +16,8 @@ nvim:
 	sudo mv nvim-linux64/ /usr/local/
 	mkdir -p ${HOME}/.config
 	cp -r ${PWD}/nvim ${HOME}/.config/
+	# For copy/paste on Ubuntu/Debian, same package name for Arch
+	sudo apt install xsel -y
 	# For tree-sitter on Debian
 	# sudo apt install build-essential -y
 
