@@ -21,8 +21,25 @@ return require('packer').startup(function(use)
   use 'ojroques/nvim-hardline'
   use 'nvim-treesitter/nvim-treesitter'
   use 'ellisonleao/gruvbox.nvim'
-  use 'jiangmiao/auto-pairs'
-  use 'voldikss/vim-floaterm'
+  use 'windwp/nvim-autopairs'
+  use 'hashivim/vim-terraform'
+  use 'fatih/vim-go'
+
+  -- LSP
+  use 'williamboman/mason.nvim'
+  use 'williamboman/mason-lspconfig.nvim'
+  use 'neovim/nvim-lspconfig'
+
+  -- Auto Completion
+  use 'hrsh7th/nvim-cmp'
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-path'
+
+  -- Snippets
+  use 'L3MON4D3/LuaSnip'
+  use 'saadparwaiz1/cmp_luasnip'
+  use 'rafamadriz/friendly-snippets'
 
   -- Telescope
   -- :checkhealth telescope
@@ -31,12 +48,10 @@ return require('packer').startup(function(use)
     requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  -- Auto Formatting
-  use 'dense-analysis/ale'
-
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
     require('packer').sync()
   end
 end)
+
