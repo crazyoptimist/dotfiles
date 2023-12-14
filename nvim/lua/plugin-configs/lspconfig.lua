@@ -21,6 +21,7 @@ local on_attach = function(_, buffer)
   -- set keybinds
   keymap.set("n", "K", vim.lsp.buf.hover, opts) -- show documentation for what is under cursor
   keymap.set("n", "gD", vim.lsp.buf.declaration, opts) -- go to declaration
+  keymap.set("n", "ge", vim.diagnostic.open_float, opts) -- show diagnostics for line
   keymap.set("n", "gd", "<cmd>Telescope lsp_definitions<CR>", opts) -- show lsp definitions
   keymap.set("n", "gR", "<cmd>Telescope lsp_references<CR>", opts) -- show definition, references
   keymap.set("n", "gi", "<cmd>Telescope lsp_implementations<CR>", opts) -- show lsp implementations
