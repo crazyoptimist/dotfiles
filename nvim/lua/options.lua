@@ -21,4 +21,5 @@ vim.opt.guifont = "monospace:h16"               -- the font used in graphical ne
 vim.api.nvim_command("autocmd BufEnter *.go setlocal tabstop=8 softtabstop=8 shiftwidth=8 expandtab")
 vim.api.nvim_command("autocmd BufEnter *.py setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab")
 vim.api.nvim_command("autocmd BufEnter Makefile setlocal tabstop=8 softtabstop=0 shiftwidth=8 noexpandtab")
+vim.api.nvim_command("autocmd BufEnter *.sol setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab")
 -- End Smart Intent Config

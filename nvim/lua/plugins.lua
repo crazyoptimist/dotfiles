@@ -41,6 +41,9 @@ return require('packer').startup(function(use)
   use 'saadparwaiz1/cmp_luasnip'
   use 'rafamadriz/friendly-snippets'
 
+  -- Auto Formatting
+  use 'mhartington/formatter.nvim'
+
   -- Telescope
   -- :checkhealth telescope
   use {
