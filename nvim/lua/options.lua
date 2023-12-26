@@ -1,5 +1,4 @@
 vim.opt.number = true                           -- show line numbers
-vim.opt.relativenumber = true                   -- show relative line numbers
 vim.opt.autoindent = true                       -- Automatically guesses the indentation given the previous one
 -- Start Tab Config
 vim.opt.tabstop = 2                             -- number of spaces a tab counts for
@@ -8,7 +7,6 @@ vim.opt.shiftwidth = 2                          -- size of an indentation
 vim.opt.expandtab = true                        -- always use spaces instead of tab characters
 -- End Tab Config
 vim.opt.hlsearch = true                         -- highlight all matches on previous search pattern
-vim.opt.cursorline = true                       -- highlight the current line
 vim.opt.ignorecase = true                       -- ignore case in search patterns
 vim.opt.swapfile = false                        -- create a swapfile
 vim.opt.undofile = true                         -- enable persistent undo

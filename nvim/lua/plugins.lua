@@ -18,7 +18,7 @@ return require('packer').startup(function(use)
   use 'tpope/vim-commentary'
   use 'nvim-tree/nvim-web-devicons'
   use 'nvim-tree/nvim-tree.lua'
-  use 'ojroques/nvim-hardline'
+  use 'nvim-lualine/lualine.nvim'
   use 'nvim-treesitter/nvim-treesitter'
   use 'ellisonleao/gruvbox.nvim'
   use 'windwp/nvim-autopairs'
@@ -57,4 +57,3 @@ return require('packer').startup(function(use)
     require('packer').sync()
   end
 end)
-
