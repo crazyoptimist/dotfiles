@@ -7,6 +7,7 @@ vim.opt.shiftwidth = 2                          -- size of an indentation
 vim.opt.expandtab = true                        -- always use spaces instead of tab characters
 -- End Tab Config
 vim.opt.hlsearch = true                         -- highlight all matches on previous search pattern
+vim.opt.cursorline = true                       -- highlight the current line
 vim.opt.ignorecase = true                       -- ignore case in search patterns
 vim.opt.swapfile = false                        -- create a swapfile
 vim.opt.undofile = true                         -- enable persistent undo
