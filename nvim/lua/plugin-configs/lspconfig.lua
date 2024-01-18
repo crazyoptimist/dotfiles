@@ -1,6 +1,6 @@
 require("mason").setup()
 require("mason-lspconfig").setup({
-  ensure_installed = { "lua_ls", "tsserver", "pyright", "rust_analyzer", "solidity_ls_nomicfoundation" }
+  ensure_installed = { "lua_ls", "tsserver", "pyright", "gopls", "rust_analyzer", "solidity_ls_nomicfoundation" }
 })
 
 
@@ -57,6 +57,11 @@ lspconfig["lua_ls"].setup({
       },
     },
   },
+})
+
+lspconfig["gopls"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
 })
 
 lspconfig["rust_analyzer"].setup({

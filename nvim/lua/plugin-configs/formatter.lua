@@ -6,7 +6,10 @@ require("formatter").setup {
       require("formatter.filetypes.javascript").prettier,
     },
     typescript = {
-      require("formatter.filetypes.javascript").prettier,
+      require("formatter.filetypes.typescript").prettier,
+    },
+    typescriptreact = {
+      require("formatter.filetypes.typescriptreact").prettier,
     },
     python = {
       require("formatter.filetypes.python").black,
