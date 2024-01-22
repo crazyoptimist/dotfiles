@@ -1,5 +1,3 @@
-local util = require "formatter.util"
-
 require("formatter").setup {
   filetype = {
     javascript = {
@@ -17,14 +15,9 @@ require("formatter").setup {
     solidity = {
       function()
         return {
-          exe = "prettier",
-          args = {
-            "--stdin-filepath",
-            util.escape_path(util.get_current_buffer_file_path()),
-            "--plugin=prettier-plugin-solidity",
-          },
+          exe = "forge",
+          args = { "fmt", "--raw", "-" },
           stdin = true,
-          try_node_modules = true,
         }
       end
     },
