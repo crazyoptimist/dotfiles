@@ -6,14 +6,24 @@ require('dashboard').setup({
       },
       shortcut = {
         {
-          desc = 'Update Plugins',
-          action = 'PackerSync',
-          key = 'u'
-        },
-        {
-          desc = 'Find Files',
+          desc = ' Find Files',
           action = 'Telescope find_files',
           key = 'f',
+        },
+        {
+          desc = "󰍉 Find Word",
+          action = "Telescope live_grep",
+          key = "g"
+        },
+        {
+          desc = " Colorschemes",
+          action = "Telescope colorscheme",
+          key = "c"
+        },
+        {
+          desc = ' Update Plugins',
+          action = 'PackerSync',
+          key = 'u'
         },
       },
     },

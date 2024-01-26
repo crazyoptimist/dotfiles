@@ -17,14 +17,17 @@ return require('packer').startup(function(use)
   use 'tpope/vim-fugitive'
   use 'tpope/vim-commentary'
   use 'airblade/vim-gitgutter'
+  use 'windwp/nvim-autopairs'
   use 'nvim-tree/nvim-web-devicons'
   use 'nvim-tree/nvim-tree.lua'
   use 'nvim-lualine/lualine.nvim'
   use 'nvim-treesitter/nvim-treesitter'
-  use 'ellisonleao/gruvbox.nvim'
   use 'nvimdev/dashboard-nvim'
-  use 'windwp/nvim-autopairs'
   use 'fatih/vim-go'
+
+  -- Colorschemes
+  use 'ellisonleao/gruvbox.nvim'
+  use 'srcery-colors/srcery-vim'
 
   -- LSP
   use 'williamboman/mason.nvim'
