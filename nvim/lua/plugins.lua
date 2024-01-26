@@ -22,8 +22,8 @@ return require('packer').startup(function(use)
   use 'nvim-lualine/lualine.nvim'
   use 'nvim-treesitter/nvim-treesitter'
   use 'ellisonleao/gruvbox.nvim'
+  use 'nvimdev/dashboard-nvim'
   use 'windwp/nvim-autopairs'
-  use 'hashivim/vim-terraform'
   use 'fatih/vim-go'
 
   -- LSP
