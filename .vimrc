@@ -95,6 +95,7 @@ nnoremap <C-N> :Fern . -drawer -toggle -reveal=%<CR>
 set background=dark
 set termguicolors   " enable true colors support
 set t_Co=256
+set term=xterm-256color
 colorscheme gruvbox
 
 " config for vim-prettier
