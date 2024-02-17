@@ -9,6 +9,7 @@ vim.opt.expandtab = true                        -- always use spaces instead of 
 -- End Tab Config
 vim.opt.hlsearch = true                         -- highlight all matches on previous search pattern
 vim.opt.cursorline = true                       -- highlight the current line
+vim.opt.cursorcolumn = true                     -- highlight the current column
 vim.opt.ignorecase = true                       -- ignore case in search patterns
 vim.opt.swapfile = false                        -- create a swapfile
 vim.opt.undofile = true                         -- enable persistent undo

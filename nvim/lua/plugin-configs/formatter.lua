@@ -1,5 +1,14 @@
 require("formatter").setup {
   filetype = {
+    go = {
+      require("formatter.filetypes.go").gofmt,
+    },
+    rust = {
+      require("formatter.filetypes.rust").rustfmt,
+    },
+    python = {
+      require("formatter.filetypes.python").black,
+    },
     javascript = {
       require("formatter.filetypes.javascript").prettier,
     },
@@ -8,9 +17,6 @@ require("formatter").setup {
     },
     typescriptreact = {
       require("formatter.filetypes.typescriptreact").prettier,
-    },
-    python = {
-      require("formatter.filetypes.python").black,
     },
     solidity = {
       function()
