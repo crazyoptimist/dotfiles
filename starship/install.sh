@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Installing a nerd font named Hack"
+echo "Installing a nerd font: Hack"
 wget https://github.com/ryanoasis/nerd-fonts/releases/latest/download/Hack.zip
 unzip Hack.zip -d ~/.fonts
 fc-cache -fv
