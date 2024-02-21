@@ -3,6 +3,9 @@ live_config_reload = true
 [shell]
 program = "C:\\Program Files\\Git\\bin\\bash.exe"
 args = ["--login", "-i"]
+# For WSL
+# program = "C:\\Windows\\System32\\wsl.exe"
+# args = ["--cd ~"]
 
 [window]
 opacity = 0.8
