@@ -1,8 +1,5 @@
 require("formatter").setup {
   filetype = {
-    go = {
-      require("formatter.filetypes.go").gofmt,
-    },
     rust = {
       require("formatter.filetypes.rust").rustfmt,
     },
