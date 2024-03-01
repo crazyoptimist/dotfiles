@@ -24,6 +24,9 @@ require("formatter").setup {
         }
       end
     },
+    cpp = {
+      require("formatter.filetypes.cpp").clangformat,
+    },
 
     ["*"] = {
       require("formatter.filetypes.any").remove_trailing_whitespace
