@@ -1,8 +1,8 @@
 require("mason").setup()
 require("mason-lspconfig").setup({
-  ensure_installed = { "lua_ls", "tsserver", "pyright", "gopls", "rust_analyzer", "solidity_ls_nomicfoundation", "clangd", "clang-format" }
+  ensure_installed = { "lua_ls", "tsserver", "pyright", "gopls", "rust_analyzer" }
 })
-
+-- "lua_ls", "tsserver", "pyright", "gopls", "rust_analyzer", "solidity_ls_nomicfoundation", "clangd"
 
 -- import lspconfig plugin
 local lspconfig = require("lspconfig")
@@ -75,11 +75,6 @@ lspconfig["solidity_ls_nomicfoundation"].setup({
 })
 
 lspconfig["yamlls"].setup({
-  capabilities = capabilities,
-  on_attach = on_attach,
-})
-
-lspconfig["clangd"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
 })
