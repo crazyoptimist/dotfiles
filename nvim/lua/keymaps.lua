@@ -15,3 +15,6 @@ vim.keymap.set('n', '<leader>h', ':noh<CR>')
 vim.keymap.set('n', '<leader>n', ':bnext<CR>')
 vim.keymap.set('n', '<leader>p', ':bprevious<CR>')
 vim.keymap.set('n', '<leader>d', ':bd<CR>')
+
+-- Exit from terminal-mode
+vim.keymap.set('t', '<Esc>', '<C-\\><C-n>')
