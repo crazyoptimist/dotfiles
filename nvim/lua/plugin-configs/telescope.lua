@@ -6,12 +6,10 @@ vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 vim.keymap.set('n', '<leader>fc', builtin.colorscheme, {})
 
 require('telescope').setup {
-  pickers = {
-    find_files = {
-      theme = "dropdown",
-    },
-    live_grep = {
-      theme = "dropdown",
+  defaults = {
+    layout_strategy = "vertical",
+    layout_config = {
+      width = 0.9,
     },
   },
 }
