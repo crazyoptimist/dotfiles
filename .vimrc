@@ -49,7 +49,7 @@ call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 
 " list your plugins here
 Plug 'gruvbox-community/gruvbox'
-Plug 'lambdalisue/fern.vim'
+Plug 'preservim/nerdtree'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
@@ -80,18 +80,16 @@ call plug#end()
 " PLUGIN SPECIFIC CONFIG
 """"""""""""""""""""""""
 
+" nerdtree config
+nnoremap <C-n> :NERDTreeToggle<CR>
+let g:NERDTreeDirArrowExpandable = '+'
+let g:NERDTreeDirArrowCollapsible = '-'
+
 " vim-airline config
 let g:airline#extensions#tabline#enabled = 1        " enable the list of buffers
 let g:airline#extensions#tabline#fnamemod = ':t'    " show filename only
-let g:airline_powerline_fonts = 1                   " use powerline fonts
 
-" fern.vim config
-let g:fern#drawer_width = 30
-let g:fern#default_hidden = 1
-let g:fern#default_exclude = '^\%(\.git\|node_modules\)$'
-nnoremap <C-N> :Fern . -drawer -toggle -reveal=%<CR>
-
-" config for making choosen color scheme look great
+" color scheme config
 set background=dark
 set termguicolors   " enable true colors support
 set t_Co=256
