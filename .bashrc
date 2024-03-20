@@ -41,7 +41,6 @@ alias la='ls -A'
 alias l='ls -CF'
 alias ..='cd ..'
 alias c='clear'
-alias v='vim'
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
