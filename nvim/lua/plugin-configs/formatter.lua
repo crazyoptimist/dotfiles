@@ -1,45 +1,15 @@
-require("formatter").setup {
-  filetype = {
-    rust = {
-      require("formatter.filetypes.rust").rustfmt,
-    },
-    python = {
-      require("formatter.filetypes.python").black,
-    },
-    javascript = {
-      require("formatter.filetypes.javascript").prettier,
-    },
-    typescript = {
-      require("formatter.filetypes.typescript").prettier,
-    },
-    typescriptreact = {
-      require("formatter.filetypes.typescriptreact").prettier,
-    },
-    solidity = {
-      function()
-        return {
-          exe = "forge",
-          args = { "fmt", "--raw", "-" },
-          stdin = true,
-        }
-      end
-    },
-    cpp = {
-      require("formatter.filetypes.cpp").clangformat,
-    },
-
-    ["*"] = {
-      require("formatter.filetypes.any").remove_trailing_whitespace
-    }
-  }
-}
-
--- Format after save
-
-local augroup = vim.api.nvim_create_augroup
-local autocmd = vim.api.nvim_create_autocmd
-augroup("__formatter__", { clear = true })
-autocmd("BufWritePost", {
-	group = "__formatter__",
-	command = ":FormatWrite",
+require("conform").setup({
+  format_on_save = {
+    -- These options will be passed to conform.format()
+    timeout_ms = 500,
+    lsp_fallback = true,
+  },
+  formatters_by_ft = {
+    rust = { "rustfmt" },
+    python = { "black" },
+    javascript = { "prettier" },
+    typescript = { "prettier" },
+    typescriptreact = { "prettier" },
+    cpp = { "clangformat" },
+  },
 })
