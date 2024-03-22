@@ -1,4 +1,6 @@
 export EDITOR=vim
+
+# use starship as shell prompt
 eval "$(starship init zsh)"
 
 # dir/file coloring
@@ -56,8 +58,8 @@ alias dils="docker image ls $1"
 alias dvls="docker volume ls"
 alias dnls="docker network ls"
 
-# # go specific(go1.16+) + PHP composer
-# export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin:$HOME/.composer/vendor/bin
+# # go specific(go1.16+)
+# export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
 
 # nodejs specific(nvm)
 export NVM_DIR="$HOME/.nvm"
