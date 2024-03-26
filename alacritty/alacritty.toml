@@ -1,13 +1,9 @@
 live_config_reload = true
 
 [shell]
-# For MSYS2
-program = "D:/MSYS64/msys2_shell.cmd"
-args = ["-defterm", "-here", "-no-start", "-ucrt64"]
-
-# # For Git4Windows
-# program = "C:\\Program Files\\Git\\bin\\bash.exe"
-# args = ["--login", "-i"]
+# For Git4Windows
+program = "C:\\Program Files\\Git\\bin\\bash.exe"
+args = ["--login", "-i"]
 
 # # For WSL
 # program = "C:\\Windows\\System32\\wsl.exe"
