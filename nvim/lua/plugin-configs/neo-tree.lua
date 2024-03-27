@@ -1,4 +1,8 @@
 require("neo-tree").setup({
+  window = {
+    position = "left",
+    width = 30,
+  },
   filesystem = {
     filtered_items = {
       visible = false, -- when true, they will just be displayed differently than normal items
