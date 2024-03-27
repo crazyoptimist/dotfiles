@@ -1,6 +1,6 @@
 require("plugin-configs.colorscheme")
 require("plugin-configs.lualine")
-require("plugin-configs.nvim-tree")
+require("plugin-configs.neo-tree")
 require("plugin-configs.treesitter")
 require("plugin-configs.telescope")
 require("plugin-configs.nvim-autopairs")
