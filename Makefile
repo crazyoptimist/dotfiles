@@ -1,6 +1,8 @@
 init:
 	cat ${PWD}/.bashrc > ${HOME}/.bashrc
 	cat ${PWD}/.tmux.conf > ${HOME}/.tmux.conf
+	# To install tmux plugins: prefix + I
+	git clone https://github.com/tmux-plugins/tpm ${HOME}/.tmux/plugins/tpm
 	sudo /bin/bash ${PWD}/starship/install.sh
 	mkdir -p ${HOME}/.config
 	cp ${PWD}/starship/starship.toml ${HOME}/.config/

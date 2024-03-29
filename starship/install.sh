@@ -1,6 +1,7 @@
 #!/bin/bash
 echo "Installing a nerd font: Hack"
 wget https://github.com/ryanoasis/nerd-fonts/releases/latest/download/Hack.zip
+mkdir -p  "$HOME/.fonts"
 unzip Hack.zip -d ~/.fonts
 fc-cache -fv
 echo "Installed a nerd font successfully!"
@@ -8,7 +9,7 @@ echo "Installed a nerd font successfully!"
 # Install emoji fonts package
 
 # Debian/Ubuntu
-sudo apt install fonts-noto-color-emoji
+sudo apt install fonts-noto-color-emoji -y
 
 # Centos/Fedora
 # dnf install google-noto-emoji-fonts
