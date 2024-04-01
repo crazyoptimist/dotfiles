@@ -24,7 +24,6 @@ style = "Regular"
 
 [cursor.style]
 shape = "Block"
-blinking = "On"
 
 ### THEME ###
 
