@@ -49,7 +49,7 @@ call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 
 " list your plugins here
 Plug 'gruvbox-community/gruvbox'
-Plug 'preservim/nerdtree'
+Plug 'lambdalisue/fern.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
@@ -80,10 +80,11 @@ call plug#end()
 " PLUGIN SPECIFIC CONFIG
 """"""""""""""""""""""""
 
-" nerdtree config
-nnoremap <C-n> :NERDTreeToggle<CR>
-let g:NERDTreeDirArrowExpandable = '+'
-let g:NERDTreeDirArrowCollapsible = '-'
+" fern.vim config
+let g:fern#drawer_width = 30
+let g:fern#default_hidden = 1
+let g:fern#default_exclude = '^\%(\.git\|node_modules\)$'
+nnoremap <C-N> :Fern . -drawer -toggle -reveal=%<CR>
 
 " vim-airline config
 let g:airline#extensions#tabline#enabled = 1        " enable the list of buffers
@@ -118,7 +119,7 @@ inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
 " useful commands are :CocInstall, :CocConfig, :h coc-completion-example
 
 " coc.nvim extensions
-let g:coc_global_extensions = ['coc-json', 'coc-go']
+let g:coc_global_extensions = ['coc-json', 'coc-tsserver']
 " go: 'coc-go'
 " ruby: 'coc-solargraph'
 " python: 'coc-pyright'
