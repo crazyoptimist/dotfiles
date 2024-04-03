@@ -19,14 +19,7 @@ return require('packer').startup(function(use)
   use 'airblade/vim-gitgutter'
   use 'windwp/nvim-autopairs'
   use 'nvim-tree/nvim-web-devicons'
-  use {
-    "nvim-neo-tree/neo-tree.nvim",
-    branch = "v3.x",
-    requires = {
-      "nvim-lua/plenary.nvim",
-      "MunifTanjim/nui.nvim",
-    }
-  }
+  use 'nvim-tree/nvim-tree.lua'
   use 'nvim-lualine/lualine.nvim'
   use 'nvim-treesitter/nvim-treesitter'
   use 'fatih/vim-go'
