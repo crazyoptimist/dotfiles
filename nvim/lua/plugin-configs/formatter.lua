@@ -11,5 +11,6 @@ require("conform").setup({
     typescript = { "prettier" },
     typescriptreact = { "prettier" },
     cpp = { "clangformat" },
+    sql = { "sql_formatter" },
   },
 })

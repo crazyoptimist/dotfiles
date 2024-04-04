@@ -35,6 +35,8 @@ end
 -- used to enable autocompletion (assign to every lsp server config)
 local capabilities = cmp_nvim_lsp.default_capabilities()
 
+-- check out the default configurations any time you got stuck:
+-- https://github.com/neovim/nvim-lspconfig/tree/master/lua/lspconfig/server_configurations
 
 -- configure language servers
 lspconfig["tsserver"].setup({
@@ -78,4 +80,10 @@ lspconfig["solidity_ls_nomicfoundation"].setup({
 lspconfig["yamlls"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
+})
+
+lspconfig["sqlls"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+  root_dir = lspconfig.util.root_pattern('.sqllsrc.json', '.git'),
 })
