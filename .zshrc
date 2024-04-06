@@ -10,12 +10,13 @@ export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
 # miss this awesome thing in bash
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# some more ls aliases
+# common aliases
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias ..='cd ..'
 alias c='clear'
+alias tmux='tmux -u'
 
 # git specific
 alias gaa="git add ."
