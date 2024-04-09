@@ -77,11 +77,6 @@ lspconfig["solidity_ls_nomicfoundation"].setup({
   on_attach = on_attach,
 })
 
-lspconfig["yamlls"].setup({
-  capabilities = capabilities,
-  on_attach = on_attach,
-})
-
 lspconfig["sqlls"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
