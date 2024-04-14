@@ -3,7 +3,9 @@ echo "Installing a nerd font: Hack"
 wget https://github.com/ryanoasis/nerd-fonts/releases/latest/download/Hack.zip
 mkdir -p  "$HOME/.fonts"
 unzip Hack.zip -d ~/.fonts
+sudo apt install fontconfig -y
 fc-cache -fv
+rm -f Hack.zip
 echo "Installed a nerd font successfully!"
 
 # Install emoji fonts package
