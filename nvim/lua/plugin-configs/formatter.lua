@@ -6,6 +6,7 @@ require("conform").setup({
   },
   formatters_by_ft = {
     rust = { "rustfmt" },
+    go = { "gofmt", "goimports" },
     python = { "black" },
     javascript = { "prettier" },
     typescript = { "prettier" },
