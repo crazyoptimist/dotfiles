@@ -7,13 +7,17 @@ eval "$(starship init zsh)"
 export CLICOLOR=1
 export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
 
-# miss this awesome thing in bash
+# miss this awesome thing in bash :)
+# git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# auto-complete source dir: `echo $FPATH`; below example is for docker cli
+# curl -fLo /usr/local/share/zsh/site-functions/_docker https://raw.githubusercontent.com/docker/cli/master/contrib/completion/zsh/_docker
 
 # common aliases
 alias ll='ls -alF'
 alias la='ls -A'
-alias l='ls -CF'
+alias l='ls -F'
 alias ..='cd ..'
 alias c='clear'
 alias tmux='tmux -u'
