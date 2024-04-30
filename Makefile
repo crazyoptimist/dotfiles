@@ -23,4 +23,7 @@ nvim:
 	# For tree-sitter on Debian
 	# sudo apt install build-essential -y
 
-.PHONY: init vim nvim
+docker:
+	sudo sh ./docker/install.sh
+
+.PHONY: init vim nvim docker
