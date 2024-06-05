@@ -106,18 +106,6 @@ autocmd BufEnter *.go :setlocal tabstop=8 softtabstop=8 shiftwidth=8 expandtab
 autocmd BufEnter *.py :setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab
 autocmd BufEnter Makefile :setlocal tabstop=8 softtabstop=0 shiftwidth=8 noexpandtab
 
-" config for coc.nvim
-function! CheckBackSpace() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~ '\s'
-endfunction
-inoremap <silent><expr> <TAB>
-      \ coc#pum#visible() ? coc#pum#next(1):
-      \ CheckBackSpace() ? "\<Tab>" :
-      \ coc#refresh()
-inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
-" useful commands are :CocInstall, :CocConfig, :h coc-completion-example
-
 " coc.nvim extensions
 let g:coc_global_extensions = ['coc-json', 'coc-tsserver']
 " go: 'coc-go'
@@ -125,6 +113,7 @@ let g:coc_global_extensions = ['coc-json', 'coc-tsserver']
 " python: 'coc-pyright'
 " typescript: 'coc-tsserver'
 " html, css: 'coc-html', 'coc-css', 'coc-emmet'
+" useful commands are :CocInstall, :CocConfig, :h coc-completion-example
 
 " config for fzf
 nmap <C-P> :FZF<CR>
