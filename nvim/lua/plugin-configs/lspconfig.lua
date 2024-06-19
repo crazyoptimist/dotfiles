@@ -82,3 +82,8 @@ lspconfig["sqlls"].setup({
   on_attach = on_attach,
   root_dir = lspconfig.util.root_pattern('.sqllsrc.json', '.git'),
 })
+
+lspconfig["terraformls"].setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
