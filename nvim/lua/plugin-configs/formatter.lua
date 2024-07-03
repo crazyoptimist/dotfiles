@@ -1,9 +1,9 @@
 require("conform").setup({
   format_on_save = {
     -- These options will be passed to conform.format()
-    -- timeout_ms = 1000,
+    timeout_ms = 3000,
     lsp_fallback = true,
-    async = true,
+    -- async = true,
   },
   formatters_by_ft = {
     rust = { "rustfmt" },
