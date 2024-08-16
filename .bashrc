@@ -3,6 +3,8 @@ export EDITOR=vim
 # use starship as shell prompt
 eval "$(starship init bash)"
 
+bind 'TAB:menu-complete'
+
 # if not running interactively, don't do anything
 case $- in
     *i*) ;;
