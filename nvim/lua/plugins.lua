@@ -25,7 +25,7 @@ return require('packer').startup(function(use)
 
   -- Colorschemes
   use 'ellisonleao/gruvbox.nvim'
-  use 'folke/tokyonight.nvim'
+  use { "catppuccin/nvim", as = "catppuccin" }
 
   -- LSP
   use 'williamboman/mason.nvim'
