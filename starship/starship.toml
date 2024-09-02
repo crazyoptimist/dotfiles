@@ -1,4 +1,5 @@
 # ~/.config/starship.toml
+command_timeout = 1000
 [username]
 format = "[$user](yellow) @ "
 disabled = false
