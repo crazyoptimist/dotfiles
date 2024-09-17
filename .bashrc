@@ -78,10 +78,10 @@ cleanup_docker_containers() {
 }
 
 cleanup_docker_images() {
-  if [ -z "$(docker images | awk '/^<none>/ {print $3}')" ]; then
+  if [ -z "$(docker images | awk '/<none>/ {print $3}')" ]; then
     echo "Hooray, there is no <none> tagged image!"
   else
-    docker rmi $(docker images | awk '/^<none>/ {print $3}')
+    docker rmi $(docker images | awk '/<none>/ {print $3}')
   fi
 }
 
