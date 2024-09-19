@@ -2,7 +2,7 @@ require("mason").setup()
 require("mason-lspconfig").setup({
   ensure_installed = { "lua_ls", "rust_analyzer" }
 })
--- "lua_ls", "tsserver", "pyright", "gopls", "rust_analyzer", "solidity_ls_nomicfoundation", "clangd"
+-- "lua_ls", "ts_ls", "pyright", "gopls", "rust_analyzer", "solidity_ls_nomicfoundation", "clangd"
 
 -- import lspconfig plugin
 local lspconfig = require("lspconfig")
@@ -39,7 +39,7 @@ local capabilities = cmp_nvim_lsp.default_capabilities()
 -- https://github.com/neovim/nvim-lspconfig/tree/master/lua/lspconfig/server_configurations
 
 -- configure language servers
-lspconfig["tsserver"].setup({
+lspconfig["ts_ls"].setup({
   capabilities = capabilities,
   on_attach = on_attach,
 })
