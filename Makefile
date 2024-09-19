@@ -22,6 +22,8 @@ nvim:
 	sudo apt install xsel -y
 	# For tree-sitter on Debian
 	# sudo apt install build-essential -y
+	# On Arch
+	# sudo pacman -Sy --needed base-devel
 
 docker:
 	sudo sh ./docker/install.sh
