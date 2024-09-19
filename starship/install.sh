@@ -16,8 +16,9 @@ sudo apt install fonts-noto-color-emoji -y
 # Centos/Fedora
 # dnf install google-noto-emoji-fonts
 
-# Arch
-# pacman -S noto-fonts-emoji
+# Arch (search and install)
+# pacman -Sgq nerd-fonts | grep hack
+# pacman -S ttf-hack-nerd
 
 # Install starship
 curl -sS https://starship.rs/install.sh | sudo sh -s -- --yes
