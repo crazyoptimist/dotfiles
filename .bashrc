@@ -56,6 +56,11 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# git completion
+if [ -f /usr/share/bash-completion/completions/git ]; then
+  . /usr/share/bash-completion/completions/git
+fi
+
 # git specific
 alias gaa="git add ."
 alias gcm="git commit"
