@@ -22,6 +22,7 @@ set undofile                                              " Enable keeping histo
 set undodir=~/.vim/undo/
 set nofixeol                                              " Do not insert a new line at the end of the file automatically
 set backspace=indent,eol,start                            " Enable backspace key to delete stuffs properly
+
 let mapleader=","                                         " Remap leader to comma
 " Mapping: Switch to the next/previous buffer
 map <leader>n :bnext<CR>
@@ -30,11 +31,19 @@ map <leader>p :bprevious<CR>
 map <leader>d :bd<CR>
 " Toggle search hightlight
 map <leader>h :set hlsearch!<CR>
+
 " Navigate vim windows better
 noremap <C-K> :wincmd k<CR>
 noremap <C-J> :wincmd j<CR>
 noremap <C-H> :wincmd h<CR>
 noremap <C-L> :wincmd l<CR>
+
+" Netsw config (Vim native file explorer)
+" let g:netrw_keepdir = 0
+" let g:netrw_winsize = 30
+" let g:netrw_banner = 0
+" let g:netrw_liststyle = 3
+" nnoremap <C-N> :Lexplore<CR>
 
 """"""""""""""""""""""""
 " PLUGINS
