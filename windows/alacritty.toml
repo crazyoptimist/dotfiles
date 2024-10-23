@@ -14,10 +14,10 @@ args = ["--login", "-i"]
 # args = ["--cd ~"]
 
 [window]
-opacity = 0.8
+opacity = 0.9
 startup_mode = "Maximized"
 dynamic_title = false
-title = "Terminal"
+decorations = "None"
 
 [font]
 size = 14.0
@@ -28,3 +28,8 @@ style = "Regular"
 
 [cursor.style]
 shape = "Block"
+
+[keyboard]
+bindings = [
+  { key = "F11", mods = "None", action = "ToggleFullscreen" },
+]
