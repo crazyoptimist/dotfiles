@@ -1,7 +1,7 @@
 [general]
 live_config_reload = true
 import = [
-  "catppuccin-mocha.toml"
+  "gruvbox_dark.toml"
 ]
 
 [shell]
