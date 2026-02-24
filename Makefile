@@ -12,10 +12,10 @@ vim:
 	curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 nvim:
-	wget https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.tar.gz
-	tar xzvf nvim-linux64.tar.gz
-	rm nvim-linux64.tar.gz
-	sudo mv nvim-linux64/ /usr/local/
+	wget https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
+	tar xzvf nvim-linux-x86_64.tar.gz
+	rm nvim-linux-x86_64.tar.gz
+	sudo mv nvim-linux-x86_64/ /usr/local/
 	mkdir -p ${HOME}/.config
 	cp -r ${PWD}/nvim ${HOME}/.config/
 	# For copy/paste on Ubuntu/Debian, same package name for Arch

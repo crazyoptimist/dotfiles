@@ -1,4 +1,4 @@
-export EDITOR=vim
+export EDITOR=nvim
 
 # use starship as shell prompt
 eval "$(starship init bash)"
@@ -103,7 +103,7 @@ alias dvls="docker volume ls"
 alias dnls="docker network ls"
 
 # neovim specific
-export PATH="$PATH:/usr/local/nvim-linux64/bin"
+export PATH="$PATH:/usr/local/nvim-linux-x86_64/bin"
 
 # # go specific(go1.16+)
 # export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
