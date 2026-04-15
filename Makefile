@@ -26,6 +26,6 @@ nvim:
 	# sudo pacman -Sy --needed base-devel
 
 docker:
-	sudo sh ./docker/install.sh
+	sudo sh ./docker/postinstall.sh
 
 .PHONY: init vim nvim docker

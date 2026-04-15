@@ -1,6 +1,5 @@
 # crazyoptimist's dotfiles
 
-Everything is for Ubuntu/Debian by default, but you will be able to make it work for your distro with minimal adjustments.
 
 ### Shell Prompt(Starship)
 
