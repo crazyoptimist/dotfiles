@@ -3,7 +3,7 @@ init:
 	cat ${PWD}/.tmux.conf > ${HOME}/.tmux.conf
 	# To install tmux plugins: prefix + I
 	git clone https://github.com/tmux-plugins/tpm ${HOME}/.tmux/plugins/tpm
-	sudo /bin/bash ${PWD}/starship/install.sh
+	/bin/bash ${PWD}/starship/install.sh
 	mkdir -p ${HOME}/.config
 	cp ${PWD}/starship/starship.toml ${HOME}/.config/
 
@@ -26,6 +26,11 @@ nvim:
 	# sudo pacman -Sy --needed base-devel
 
 docker:
-	sudo sh ./docker/postinstall.sh
+	bash ./docker/postinstall.sh
+
+python:
+	sudo apt update; sudo apt install make build-essential libssl-dev zlib1g-dev \
+	libbz2-dev libreadline-dev libsqlite3-dev curl git \
+	libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev libzstd-dev
 
 .PHONY: init vim nvim docker

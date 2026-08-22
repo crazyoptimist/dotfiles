@@ -16,9 +16,6 @@ fi
 
 # Manage Docker as a non-root user
 sudo groupadd -f docker
-sudo usermod -aG docker "$USER"
+sudo usermod -aG docker "${SUDO_USER:-$USER}"
 
-sudo docker -v
-sudo docker compose version
-
-echo -e "${GREEN}Setup complete. Please reboot your machine.${RESET}"
+sg docker -c "docker -v && docker compose version && docker ps"
